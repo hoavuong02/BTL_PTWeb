@@ -1,0 +1,121 @@
+:root{
+    --primary-color : #F4F6F8;
+    --white-color: #fff;
+    --black-color: #333333;
+    --text-color: #333;
+}
+html{
+    
+    font-family: 'Nunito Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+.header{
+    background-color: var(--primary-color);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.header-wrapper{
+     display: flex; 
+     justify-content: space-between;
+     align-items: center;
+     
+     
+}
+.header__name-link{
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 24px;
+    font-weight: 700;
+}
+.header__nav{
+    
+    margin: 18px 0;
+}
+.header__nav-list{
+    display: flex;
+    flex-direction: row;
+}
+.header__nav-item{
+    list-style: none;
+    
+}
+.header__nav-item-link{
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 16px;
+    padding: 8px 16px;
+    font-weight: 700;
+    line-height: 48px;
+}
+.header__nav-item:hover{
+    opacity: 0.7;
+}
+/* banner */
+.banner{
+
+}
+.banner-wrapper{
+    background-color: var(--primary-color);
+}
+.banner__img-box{
+
+}
+.banner__img-box img{
+    margin-top: 114px;
+    margin-left: 164px;
+}
+.banner__info-box{
+    margin-top: 155px;
+}
+.banner__info-title{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 18px;
+}
+.banner__info-name{
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0 0 16px;
+    position: relative;
+}
+.banner__info-name::after{
+    content: "";
+    width: 125px;
+    height: 30px;
+    position: absolute;
+    top: 38px;
+    right: 300px;
+    background-image: url(https://demo.templateflip.com/super/images/marker.svg);
+    background-repeat: no-repeat;
+}
+.banner__info-job{
+    font-size: 20px;
+    margin: 32px 0 16px;
+    color: #212529;
+}
+.banner__info-icon{
+
+}
+.banner__info-icon-link{
+    font-size: 16px;
+    color: #212529;
+    text-decoration: none;
+    padding: 0 8px;
+}
+.banner__info-btn{
+
+}
+.banner__info-btn-link{
+
+}
+.banner-btn-icon{
+
+}
+
+
