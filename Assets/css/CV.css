@@ -9,11 +9,7 @@ html{
     font-family: 'Nunito Sans', sans-serif;
     scroll-behavior: smooth;
 }
-/* *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-} */
+
 .header{
     background-color: var(--primary-color);
     position: fixed;
