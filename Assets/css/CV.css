@@ -10,6 +10,10 @@ html{
     scroll-behavior: smooth;
 }
 
+/* Template */
+.cate
+
+
 .header{
     background-color: var(--primary-color);
     position: fixed;

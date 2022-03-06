@@ -1,4 +1,3 @@
-
 .grid {
     width: 100%;
     display: block;
@@ -429,7 +428,7 @@
 }
 
 /* Tablet - PC low resolution */
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 740px) and (max-width: 991px) {
     .wide {
         width: 644px;
     }
@@ -591,3 +590,7 @@
     }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2654b9d6663323b40120b6b38b6c339d53dc5b31
