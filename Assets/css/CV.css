@@ -9,6 +9,33 @@ html{
     font-family: 'Nunito Sans', sans-serif;
     scroll-behavior: smooth;
 }
+/* Template */
+.category{
+    display: flex;
+    justify-content: center;
+
+}
+.category h1{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35px;
+    color: #212529;
+    display: inline;
+    margin-bottom: 48px;
+    position: relative;
+    
+}
+.category h1::after{
+    content: "";
+    width: 125px;
+    height: 30px;
+    position: absolute;
+    bottom: -32px;
+    right: 24px;
+    background-image: url(../image/marker.svg);
+    background-repeat: no-repeat;
+}
 /* *{
     padding: 0;
     margin: 0;
@@ -24,9 +51,12 @@ html{
      display: flex; 
      justify-content: space-between;
      align-items: center;
-     
+     padding: 0 91px;
      
 }
+/* .banner>.grid.wide-l{
+    background-color: var(--primary-color);
+} */
 .header__name-link{
     text-decoration: none;
     color: var(--black-color);
@@ -49,26 +79,28 @@ html{
     text-decoration: none;
     color: var(--black-color);
     font-size: 16px;
-    padding: 8px 16px;
+    padding: 8px 9px;
     font-weight: 700;
     line-height: 48px;
 }
 .header__nav-item:hover{
     opacity: 0.7;
 }
-/* banner */
+/* BANNER */
 .banner{
-
-}
-.banner-wrapper{
     background-color: var(--primary-color);
+    position: relative;
 }
+/* .banner-wrapper{
+    background-color: var(--primary-color);
+} */
 .banner__img-box{
 
 }
 .banner__img-box img{
     margin-top: 114px;
-    margin-left: 164px;
+    margin-left: 112px;
+    width: 74%;
 }
 .banner__info-box{
     margin-top: 155px;
@@ -83,15 +115,17 @@ html{
     font-weight: 800;
     margin: 0 0 16px;
     position: relative;
+    display: inline;
+    width: auto;
 }
 .banner__info-name::after{
     content: "";
     width: 125px;
     height: 30px;
     position: absolute;
-    top: 38px;
-    right: 300px;
-    background-image: url(https://demo.templateflip.com/super/images/marker.svg);
+    top: 50px;
+    right: -8px;
+    background-image: url(../image/marker.svg);
     background-repeat: no-repeat;
 }
 .banner__info-job{
@@ -100,13 +134,16 @@ html{
     color: #212529;
 }
 .banner__info-icon{
-
+    margin-top: 28px;
 }
 .banner__info-icon-link{
-    font-size: 16px;
+    font-size: 17px;
     color: #212529;
     text-decoration: none;
     padding: 0 8px;
+}
+.banner__info-icon-link:hover{
+    opacity: 0.7;
 }
 .banner__info-btn{
 
@@ -114,8 +151,107 @@ html{
 .banner__info-btn-link{
 
 }
+.banner__info-btn-link button{
+    padding: 15px 33px;
+    margin-top: 54px;
+    border-radius: 48px;
+    border: none;
+    outline: none;
+    background-color: #F6E05E;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px rgb(0 0 0 / 10%);
+    transition: transform ease 0.3s;
+}
+
+.banner__info-btn-link button:hover{
+    opacity: 0.7;
+    transform: translateY(-3px);
+}
+
 .banner-btn-icon{
 
 }
+.banner__wave{
+    display: block;
+    height: 220px;
+    width: 100%;
+    min-width: 600px;
+    background-image: url(https://demo.templateflip.com/super/images/wave-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.admin-info{
+    margin-top: 283px;
+}
+
+.admin-info__wrapper{
+    margin-top: 67px;
+}
+.admin-info__box1{
+
+}
+.admin-info__box1-name{
+    font-size: 24px;
+    margin: 16px 0;
+    font-weight: 700;
+}
+.admin-info__box1-introduce{
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 26px;
+}
+.admin-info__box1-subbox1{
+}
+.subbox1-wrapper{
+    padding: 8px 0;
+
+}
+.subbox1-wrapper p{
+    display: inline-block;
+}
+.subbox1-wrapper span{
+    margin-left: 19px;
+    font-weight: 700;
+}
+.admin-info__box2{
+
+}
+.admin-info__box2-img{
+    margin-left: 87px;
+    border-radius: 30px;
+    max-width: 100%;
+}
+.subbox1-wrapper .span0{
+    padding-left: 30px;
+}
+.subbox1-wrapper .span1{
+    padding-left: 20px;
+}
+.subbox1-wrapper .span2{
+    padding-left: 15px;
+}
+.subbox1-wrapper .span3{
+    padding-left: 12px;
+}
+.subbox1-wrapper .span4{
+    
+}
+.subbox1-wrapper .span5{
+    padding-left: 12px;
+}
+/* services */
+.services__container{
+    margin-top: 50px;
+}
 
 
+
+
+
+.test{
+    background-color: red;
+    height: 100vh;
+}

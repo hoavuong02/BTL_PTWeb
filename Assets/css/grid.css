@@ -1,3 +1,4 @@
+   
 .grid {
     width: 100%;
     display: block;
@@ -5,7 +6,7 @@
 }
 
 .grid.wide {
-    max-width: 1200px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -428,7 +429,7 @@
 }
 
 /* Tablet - PC low resolution */
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 740px) and (max-width: 991px) {
     .wide {
         width: 644px;
     }
@@ -589,6 +590,5 @@
         margin-left: 91.66667%;
     }
 }
-
 
 
