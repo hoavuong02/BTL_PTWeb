@@ -1,0 +1,126 @@
+/* Mobile and tablet */
+@media(max-width: 992px){
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+    .header-wrapper{
+        padding: 0 17px;
+        background-color: red;
+        height: 57.6px;
+    }
+    .banner__wave{
+        min-width: 0px;
+    }
+    .admin-info__box2-img{
+        margin-left: 32px;
+        border-radius: 30px;
+    }
+    .banner__img-box img{
+        margin-top: 114px;
+        margin-left: 30px;
+        
+    }
+    .banner__info-box{
+        margin-left: 32px;
+    }
+    .admin-info__box1{
+        margin-left: 31px;
+    }
+    .skills__item{
+        margin-left: 28px;
+        margin-right: 28px;
+    }
+    .show-mobile-tablet{
+        display: block;
+    }
+    .header-wrapper{
+        position: relative;
+    }
+    .header__nav-list {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 59px;
+        left: 0;
+        background-color: white;
+        width: 100%;
+    }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 992px){
+    .hide-on-tablet{
+        display: none;
+    }
+    .banner__img-box img{
+        width: 70%;
+    }
+    .admin-info__box2-img{
+        max-width: 80%;
+    }
+    .category-about p{
+        margin: 0px 85px 32px;
+    }
+    .services__item__img{
+        margin-left: 59px;
+    }
+    .services__name{
+        padding-left: 0px;
+    }
+    
+}
+/* Mobile */
+@media (max-width: 739px){
+    .hide-on-mobile{
+        display: none;
+    }
+    .banner__info-name{
+        font-size: 28px;
+    }
+    .banner__info-name::after{
+        top: 38px;
+        right: 70px;
+    }
+    .banner__img-box img{
+        width: 82%;
+    }
+    .banner__info-job{
+        width: 77%;
+        line-height: 33px;
+    }
+    .subbox1-wrapper span{
+        display: block;
+        margin-left: 0px;
+        padding: 11px 0 !important;
+    }
+    .admin-info__box2-img{
+        margin-left: 32px;
+        max-width: 83%;
+        margin-top: 6px;
+    }
+    .category-about p{
+        line-height: 26px;
+        padding: 0px 32px;
+        margin: 0;
+    }
+    .services__item__img{
+        margin-left: 148px;
+    }
+    .services__name{
+        padding-left: 0px;
+    }
+    .services__item{
+        padding-top: 72px;
+    }
+    .skills__item-container2{
+        align-items: unset;
+    }
+    .skills__item__wrapper{
+        width: 100%;
+    }
+}
+/* PC */
+@media (min-width: 992px){
+    .hide-on-PC{
+        display: none;
+    }
+}
