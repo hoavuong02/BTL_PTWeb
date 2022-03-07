@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./Assets/css/reset.css">
     <link rel="stylesheet" href="./Assets/css/grid.css">
     <link rel="stylesheet" href="./Assets/css/CV.css">
+    <link rel="stylesheet" href="./Assets/css/responsive.css">
     <link rel="stylesheet" href="./Assets/css/animation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -26,7 +27,7 @@
                     <div class="header__name">
                         <a href="#" class="header__name-link">Supper Folio</a>
                     </div>
-                    <div class="header__nav">
+                    <div class="header__nav hide-on-mobile-tablet">
                         <ul class="header__nav-list">
                             <div class="header__nav-item">
                                 <a href="#" class="header__nav-item-link">About</a>
@@ -53,6 +54,10 @@
                             </div>
                         </ul>
                     </div>
+                    <div class="mobile-tablet-menu hide-on-PC">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -193,10 +198,25 @@
 
                     <div class="services__item">
                         <div class="row">
-                            <div class="col"></div>
-                            <div class="col"></div>
-                            <div class="col"></div>
-                            <div class="col"></div>
+                            <div class="col l-3 m-3 c-12">
+                                <img src="./Assets/image/web-design.svg" alt="" class="services__item__img">
+                                <h1 class="services__name">Web Design</h1>
+                            </div>
+                            <div class="col l-3 m-3 c-12">
+                                <img src="./Assets/image/graphic-design.svg" alt="" class="services__item__img">
+                                <h1 class="services__name">Graphic Design</h1>
+
+                            </div>
+                            <div class="col l-3 m-3 c-12">
+                                <img src="./Assets/image/ui-ux.svg" alt="" class="services__item__img">
+                                <h1 class="services__name">UI/UX</h1>
+
+                            </div>
+                            <div class="col l-3 m-3 c-12">
+                                <img src="./Assets/image/app-development.svg" alt="" class="services__item__img">
+                                <h1 class="services__name">App Development</h1>
+
+                            </div>
                         </div>
                     </div>
 
@@ -204,7 +224,140 @@
                 </div>
             </div>
         </div>
+        <!-- Skills -->
 
+        <div class="skills">
+            <div class="grid wide">
+                <div class="skills__container">
+                    <div class="category">
+                        <h1>My Skills </h1>
+                    </div>
+                    <div class="category-about">
+                        <p>I am a quick learner and specialize in multitude of skills required for Web Application Development and Product Design</p>
+                    </div>
+
+                    <div class="skills__item">
+                        <div class="row">
+                            <div class="col l-6 m-6 c-12">
+                                <div class="skills__item-container1">
+
+                                    <div class="skills__item__wrapper">
+                                        <div class="skills__item__heading">
+                                            <h1>HTML5</h1>  <span>90%</span>
+                                        </div>
+                                        
+                                        <div class="skills__item__percent-wrapper">
+                                            <div class="skills__item__percent--90">
+    
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="skills__item__wrapper">
+                                        <div class="skills__item__heading">
+                                            <h1>CSS3</h1>  <span>90%</span>
+                                        </div>
+                                        
+                                        <div class="skills__item__percent-wrapper">
+                                            <div class="skills__item__percent--90">
+    
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="skills__item__wrapper">
+                                        <div class="skills__item__heading">
+                                            <h1>JavaScript</h1>  <span>80%</span>
+                                        </div>
+                                        
+                                        <div class="skills__item__percent-wrapper">
+                                            <div class="skills__item__percent--80">
+    
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="skills__item__wrapper">
+                                        <div class="skills__item__heading">
+                                            <h1>React</h1>  <span>75%</span>
+                                        </div>
+                                        
+                                        <div class="skills__item__percent-wrapper">
+                                            <div class="skills__item__percent--80">
+    
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-6 m-6 c-12">
+                                <div class="skills__item-container2">
+
+                                    <div class="skills__item__wrapper">
+                                        <div class="skills__item__heading">
+                                            <h1>PHP</h1>  <span>70%</span>
+                                        </div>
+                                        
+                                        <div class="skills__item__percent-wrapper">
+                                            <div class="skills__item__percent--70">
+    
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="skills__item__wrapper">
+                                        <div class="skills__item__heading">
+                                            <h1>WordPress</h1>  <span>70%</span>
+                                        </div>
+                                        
+                                        <div class="skills__item__percent-wrapper">
+                                            <div class="skills__item__percent--70">
+    
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="skills__item__wrapper">
+                                        <div class="skills__item__heading">
+                                            <h1>My SQL</h1>  <span>60%</span>
+                                        </div>
+                                        
+                                        <div class="skills__item__percent-wrapper">
+                                            <div class="skills__item__percent--60">
+    
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="skills__item__wrapper">
+                                        <div class="skills__item__heading">
+                                            <h1>Photoshop</h1>  <span>60%</span>
+                                        </div>
+                                        
+                                        <div class="skills__item__percent-wrapper">
+                                            <div class="skills__item__percent--60">
+    
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXPERIENCE SECTION -->
         <div class="experience">
             <div class="grid wide">
                 <div class="experience__container">
@@ -451,13 +604,6 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- Footer section -->
         <div class="footer">
             <div class="grid wide">
@@ -482,7 +628,13 @@
         </div>
     </div>
     <script>
-        AOS.init();
+        AOS.init(); // Thư viện animation
+        var header = document.querySelector('.header')
+        var mobtabMenu = document.querySelector('.mobile-tablet-menu')
+        var headernav = document.querySelector('.header__nav')
+        mobtabMenu.onclick = function(){
+            headernav.classList.toggle("show-mobile-tablet")
+        }
     </script>
 </body>
 

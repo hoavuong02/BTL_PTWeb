@@ -13,7 +13,7 @@ html{
 .category{
     display: flex;
     justify-content: center;
-
+    margin: 0px 0px 20px;
 }
 .category h1{
     text-align: center;
@@ -67,6 +67,15 @@ html{
     
     margin: 18px 0;
 }
+/* menu */
+.mobile-tablet-menu{
+
+}
+.mobile-tablet-menu i{
+    font-size: 35px;
+    margin-right: 10px;
+}
+
 .header__nav-list{
     display: flex;
     flex-direction: row;
@@ -178,7 +187,7 @@ html{
     height: 220px;
     width: 100%;
     min-width: 600px;
-    background-image: url(https://demo.templateflip.com/super/images/wave-bg.svg);
+    background-image: url(../image/wave-bg.svg);
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
@@ -244,11 +253,114 @@ html{
 }
 /* services */
 .services__container{
-    margin-top: 50px;
+    margin-top: 69px;
+}
+.category-about{
+
+}
+.services__item{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.services__item__img{
+    margin-left: 87px;
+    margin-bottom: 16px;
+}
+.category-about p{
+    font-size: 16px;
+    text-align: center;
+    max-width: 600px;
+    color: #212529;
+    margin: 0px 212px 32px;
+    line-height: 26px;
+}
+/* percent  */
+.skills{
+
+}
+.skills__container{
+    margin-top: 81px;
+}
+.skills__item-container1{
+    /* padding: 12px 94px 8px 12px; */
+}
+.skills__item-container2{
+    /* padding: 12px 12px 8px 94px; */
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.skills__item{
+    margin-bottom: 50px;
+    background-color: #F4F6F8;
+    padding: 32px
+}
+.services__name{
+    font-size: 20px;
+    text-align: center;
+    margin: 0px 0px 16px;
+    padding-left: 29px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.skills__item__wrapper{
+    padding: 8px 0;
+    width: 82%;
+}
+.skills__item__heading{
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 6px;
+}
+.skills__item__heading h1{
+    flex: 1;
+}
+.skills__item__heading span{
 }
 
-
-
+.skills__item__percent-wrapper{
+    background-color: #E9ECEF;
+    height: 16px;
+    border-radius: 10px;
+    width: 100%;
+}
+.skills__item__percent--90{
+    height: 16px;
+    border-radius: 10px;
+    width: 90%;
+    background-color: #F6E05E;
+}
+.skills__item__percent--80{
+    height: 16px;
+    border-radius: 10px;
+    width: 80%;
+    background-color: #F6E05E;
+}
+.skills__item__percent--75{
+    height: 16px;
+    border-radius: 10px;
+    width: 75%;
+    background-color: #F6E05E;
+}
+.skills__item__percent--70{
+    height: 16px;
+    border-radius: 10px;
+    width: 70%;
+    background-color: #F6E05E;
+}
+.skills__item__percent--60{
+    height: 16px;
+    border-radius: 10px;
+    width: 60%;
+    background-color: #F6E05E;
+}
+.test{
+    background-color: red;
+    height: 100vh;
+}
 
 
 /*CSS for EXPERIENCE  */
@@ -297,6 +409,8 @@ html{
     line-height: 25.6px;
     margin-bottom: 16px;
 }
+
+
 
 /* CSS for CLIENT */
 .client {
