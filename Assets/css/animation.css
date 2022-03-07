@@ -1,0 +1,38 @@
+.left-in {
+    animation: leftIn 0.5s ease 0.3s forwards;
+}
+
+.left-in--delay {
+    animation: leftIn 0.5s ease 0.5s forwards;
+}
+
+.right-in {
+    animation: rightIn 0.5s ease 0.3s forwards;
+}
+
+.right-in--delay {
+    animation: rightIn 0.5s ease 0.5s forwards;
+}
+
+
+@keyframes leftIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rightIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
