@@ -603,8 +603,4 @@ html{
     text-decoration: none;
 }
 
-@media (max-width:767px) {
-    .contact__info {
-        padding: 0 32px;
-    }
-}
+
