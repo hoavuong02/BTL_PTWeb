@@ -31,14 +31,14 @@ nav {
 
 .nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 0 30px;
 }
 
 .nav li {
     width: 80px;
     list-style: none;
-    padding: 10px 20px;
+    padding: 10px 0;
 }
   
 .nav li a {
@@ -47,7 +47,6 @@ nav {
     font-size: 23px;
 } 
 .nav li a:hover {
-    background-color: #ccc;
     color: #000;
 }
 /* home section */
@@ -72,6 +71,7 @@ nav {
     border-bottom: 1px solid #f8f8f8;
     max-width: 90%;
     font-size: 40px;
+    text-shadow: 0 0 1px #000;
   }
 
 
@@ -79,6 +79,7 @@ nav {
     margin: 0;
     height: 30px;
     margin-top: 20px;
+    text-shadow: 0 0 1px #000;
 }
 
 #home .social-media-buttons > li {
@@ -103,22 +104,22 @@ nav {
     padding-left: 18px;
     padding-right: 18px;
 }
-/* visit */
-#visit {
+/* member */
+#member {
     background: rgb(247, 247, 247);
 }
-#visit .visit-link {
+#member .member-link {
     text-decoration: none;
     color: #000;
 }
   
-#visit img {
+#member img {
     height: 200px;
     display: block;
     margin: auto;
 }
   
-#visit h3 {
+#member h3 {
     margin-bottom: 40px;
     margin-top: 50px;
     padding-left: 40px;
@@ -127,7 +128,7 @@ nav {
     padding-top: 40px;
 }
   
-#visit .visit-piece {
+#member .member-piece {
     border: 1px solid white;
     display: block;
     width: 250px;
@@ -141,8 +142,8 @@ nav {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     max-width: 90%;
 }
-.visit-piece h5,
-.visit-piece > h4 {
+.member-piece h5,
+.member-piece > h4 {
     margin: 10px;
 }
 /* about section */
@@ -239,7 +240,7 @@ footer {
         width: 100%;
     }
 
-    .visit-container {
+    .member-container {
         height: 1100px;
     }
 
