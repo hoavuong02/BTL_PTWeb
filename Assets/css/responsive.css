@@ -154,7 +154,9 @@
     .portfolio-img{
         padding: 5px 10px;
     }
-    
+    .contact__info {
+        padding: 0 32px;
+    }
 }
 /* PC */
 @media (min-width: 992px){

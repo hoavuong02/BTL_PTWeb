@@ -1,0 +1,250 @@
+
+.main {
+    overflow: hidden;
+}  
+/* lưới */
+.row {
+    width: 100%;
+    display: flex;
+}
+.col-third {
+    width: 33.3333333%;
+}
+.col-half {
+    width: 50%;
+}
+.col-full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* nav */
+nav {
+    position: fixed;
+    background: #42b7c7 !important;
+    top:0;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 30px;
+}
+
+.nav li {
+    width: 80px;
+    list-style: none;
+    padding: 10px 0;
+}
+  
+.nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 23px;
+} 
+.nav li a:hover {
+    color: #000;
+}
+/* home section */
+#home .intro-header {
+    padding-top: 100px;
+    padding-bottom:50px;
+    text-align: center;
+    color: white;
+    height: 650px;
+    background-image: url('../image/index_img/img1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+  
+
+    
+#home h1 {
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    width: 400px;
+    border-bottom: 1px solid #f8f8f8;
+    max-width: 90%;
+    font-size: 40px;
+    text-shadow: 0 0 1px #000;
+  }
+
+
+#home .social-media-buttons {
+    margin: 0;
+    height: 30px;
+    margin-top: 20px;
+    text-shadow: 0 0 1px #000;
+}
+
+#home .social-media-buttons > li {
+    padding-top: 0px;
+    text-align: center;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+  
+
+  
+#home li a {
+    padding-top: 13px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+  
+#home #github {
+    margin-top: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+/* member */
+#member {
+    background: rgb(247, 247, 247);
+}
+#member .member-link {
+    text-decoration: none;
+    color: #000;
+}
+  
+#member img {
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+  
+#member h3 {
+    margin-bottom: 40px;
+    margin-top: 50px;
+    padding-left: 40px;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 40px;
+}
+  
+#member .member-piece {
+    border: 1px solid white;
+    display: block;
+    width: 250px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-left: auto ;
+    margin-right: auto ;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 90%;
+}
+.member-piece h5,
+.member-piece > h4 {
+    margin: 10px;
+}
+/* about section */
+#about {
+    padding-top:50px;
+    padding-bottom: 100px;
+    
+}
+  
+#about h3 {
+    text-decoration: underline;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+
+  }
+  
+#about p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 20px;
+  }
+#about .about-img{
+    text-align: center;
+}  
+
+#about img {
+    margin-top: 40px;
+    height: 200px;
+    border: 6px solid #42b7c7;
+    border-radius: 50%;
+}
+/* contact */
+  
+#contact {
+    background-color: #42b7c7;
+    padding-bottom: 60px;
+}
+  
+  
+#contact p {
+    font-size: 14px;
+    padding-left: 40px;
+    padding-top: 20px;
+    word-wrap: break-word;
+}
+  
+#contact .social-media-buttons > li {
+    padding: 0px;
+    text-align: center;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+   
+}
+  
+#contact ul {
+    margin-top: 20px;
+}
+  
+#contact p i {
+    font-size: 18px;
+    color: #302f2f;
+}
+  
+#contact li i {
+    font-size: 40px;
+    color: #302f2f;
+}
+  
+#contact p a {
+    color: black;
+    padding-bottom: -2px;
+    margin-top: 15px;
+}
+  
+#contact p span {
+    font-size: 18px;
+    margin-top: 10px;
+}
+  
+footer {
+    text-align: center;
+    font-size: 10px;
+}
+
+/* responsive */
+@media (max-width: 740px) {
+    .row {
+        display: block;
+    }
+
+    .s-col-full {
+        width: 100%;
+    }
+
+    .member-container {
+        height: 1100px;
+    }
+
+    .nav li a {
+        font-size: 16px;
+    }
+}
