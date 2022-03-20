@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="height=device-height, 
+                      width=device-width, initial-scale=1.0, 
+                      minimum-scale=1.0, maximum-scale=1.0, 
+                      user-scalable=no, target-densitydpi=device-dpi"> <!--Để cho cái header ở mobile có thuộc tính giữ nguyên khi kéo xuống-->
     <title>CV Template</title>
     <link rel="stylesheet" href="./Assets/css/reset.css">
     <link rel="stylesheet" href="./Assets/css/grid.css">
@@ -23,26 +27,26 @@
     <div class="main">
         <div class="header">
             <div class="grid">
-                <div class="header-wrapper">
+                <div class="header-wrapper" >
                     <div class="header__name">
                         <a href="#" class="header__name-link">Supper Folio</a>
                     </div>
-                    <div class="header__nav hide-on-mobile-tablet">
+                    <div class="header__nav">
                         <ul class="header__nav-list">
                             <div class="header__nav-item">
-                                <a href="#" class="header__nav-item-link">About</a>
+                                <a href="#about" class="header__nav-item-link">About</a>
                             </div>
 
                             <div class="header__nav-item">
-                                <a href="#" class="header__nav-item-link">Services</a>
+                                <a href="#services" class="header__nav-item-link">Services</a>
                             </div>
 
                             <div class="header__nav-item">
-                                <a href="#" class="header__nav-item-link">Skills</a>
+                                <a href="#skills" class="header__nav-item-link">Skills</a>
                             </div>
 
                             <div class="header__nav-item">
-                                <a href="#" class="header__nav-item-link">Portfolio</a>
+                                <a href="#portfolio" class="header__nav-item-link">Portfolio</a>
                             </div>
 
                             <div class="header__nav-item">
@@ -77,8 +81,9 @@
                             <div class="banner__info-box">
                                 <p class="banner__info-title">HELLO !</p>
                                 <h1 class="banner__info-name">I’m Walter Patterson</h1>
-                                <p class="banner__info-job">Web Developer & Mobile Application Developer</p>
-                                <div class="banner__info-icon">
+
+                                <p class="banner__info-job" data-aos="fade-up" data-aos-duration="600" data-aos="new-animation">Web Developer & Mobile Application Developer</p>
+                                <div class="banner__info-icon" data-aos="fade-up" data-aos-duration="600">
                                     <a class="banner__info-icon-link" href="#">
                                         <i class="fa-brands fa-twitter"></i>
 
@@ -105,7 +110,7 @@
                                     </a>
                                 </div>
 
-                                <div class="banner__info-btn">
+                                <div class="banner__info-btn" data-aos="fade-up" data-aos-duration="600">
                                     <a href="" class="banner__info-btn-link">
                                         <button>
                                             Get In Touch <i class="banner-btn-icon fa-solid fa-arrow-right"></i>
@@ -122,12 +127,12 @@
 
             </div>
 
-            <div class="banner__wave">
+            <div class="banner__wave" >
             </div>
         </div>
 
         <!--Admin-info -->
-        <div class="admin-info">
+        <div id="about" class="admin-info">
             <div class="grid wide">
                 <div class="admin-info__wrapper">
                     <div class="row">
@@ -174,8 +179,8 @@
                         </div>
 
                         <div class="col l-6 m-6 c-12">
-                            <div class="admin-info__box2">
-                                <img src="./Assets/image/avatar.jpg" alt="Avatar" class="admin-info__box2-img">
+                            <div class="admin-info__box2" >
+                                <img src="./Assets/image/avatar.jpg" alt="Avatar" class="admin-info__box2-img"  >
                             </div>
                         </div>
                     </div>
@@ -185,7 +190,7 @@
 
         <!-- services -->
 
-        <div class="services">
+        <div id="services" class="services">
             <div class="grid wide">
                 <div class="services__container">
                     <div class="category">
@@ -198,23 +203,34 @@
 
                     <div class="services__item">
                         <div class="row">
-                            <div class="col l-3 m-3 c-12">
-                                <img src="./Assets/image/web-design.svg" alt="" class="services__item__img">
-                                <h1 class="services__name">Web Design</h1>
+                            <div class="col l-3 m-3 c-12" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100" data-aos-easing=ease-in-out > 
+                                <div class="services-box">
+                                    <img src="./Assets/image/web-design.svg" alt="" class="services__item__img">
+                                    <h1 class="services__name">Web Design</h1>
+                                </div>
                             </div>
-                            <div class="col l-3 m-3 c-12">
-                                <img src="./Assets/image/graphic-design.svg" alt="" class="services__item__img">
-                                <h1 class="services__name">Graphic Design</h1>
+                            <div class="col l-3 m-3 c-12" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" data-aos-easing=ease-in-out>
+                                <div class="services-box">
+
+                                    <img src="./Assets/image/graphic-design.svg" alt="" class="services__item__img">
+                                    <h1 class="services__name">Graphic Design</h1>
+                                </div>
 
                             </div>
-                            <div class="col l-3 m-3 c-12">
-                                <img src="./Assets/image/ui-ux.svg" alt="" class="services__item__img">
-                                <h1 class="services__name">UI/UX</h1>
+                            <div class="col l-3 m-3 c-12" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300" data-aos-easing=ease-in-out>
+                                <div class="services-box">
+                                    <img src="./Assets/image/ui-ux.svg" alt="" class="services__item__img">
+                                    <h1 class="services__name">UI/UX</h1>
+
+                                </div>
 
                             </div>
-                            <div class="col l-3 m-3 c-12">
-                                <img src="./Assets/image/app-development.svg" alt="" class="services__item__img">
-                                <h1 class="services__name">App Development</h1>
+                            <div class="col l-3 m-3 c-12" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400" data-aos-easing=ease-in-out>
+                                <div class="services-box">
+                                    <img src="./Assets/image/app-development.svg" alt="" class="services__item__img">
+                                    <h1 class="services__name">App Development</h1>
+
+                                </div>
 
                             </div>
                         </div>
@@ -226,7 +242,7 @@
         </div>
         <!-- Skills -->
 
-        <div class="skills">
+        <div id="skills" class="skills">
             <div class="grid wide">
                 <div class="skills__container">
                     <div class="category">
@@ -247,7 +263,7 @@
                                         </div>
                                         
                                         <div class="skills__item__percent-wrapper">
-                                            <div class="skills__item__percent--90">
+                                            <div class="skills__item__percent--90 aos-animate" data-aos="zoom-in-right" data-aos-delay="100" data-aos-duration="600" data-aos-easing=ease-in-out >
     
                                             </div>
                                         </div>
@@ -260,7 +276,7 @@
                                         </div>
                                         
                                         <div class="skills__item__percent-wrapper">
-                                            <div class="skills__item__percent--90">
+                                            <div class="skills__item__percent--90 aos-animate" data-aos="zoom-in-right" data-aos-delay="100" data-aos-duration="600" data-aos-easing=ease-in-out >
     
                                             </div>
                                         </div>
@@ -273,7 +289,7 @@
                                         </div>
                                         
                                         <div class="skills__item__percent-wrapper">
-                                            <div class="skills__item__percent--80">
+                                            <div class="skills__item__percent--80 aos-animate" data-aos="zoom-in-right" data-aos-delay="100" data-aos-duration="600" data-aos-easing=ease-in-out>
     
                                             </div>
                                         </div>
@@ -286,7 +302,7 @@
                                         </div>
                                         
                                         <div class="skills__item__percent-wrapper">
-                                            <div class="skills__item__percent--80">
+                                            <div class="skills__item__percent--80 aos-animate" data-aos="zoom-in-right" data-aos-delay="100" data-aos-duration="600" data-aos-easing=ease-in-out>
     
                                             </div>
                                         </div>
@@ -303,7 +319,7 @@
                                         </div>
                                         
                                         <div class="skills__item__percent-wrapper">
-                                            <div class="skills__item__percent--70">
+                                            <div class="skills__item__percent--70 aos-animate" data-aos="zoom-in-right" data-aos-delay="100" data-aos-duration="600" data-aos-easing=ease-in-out>
     
                                             </div>
                                         </div>
@@ -316,7 +332,7 @@
                                         </div>
                                         
                                         <div class="skills__item__percent-wrapper">
-                                            <div class="skills__item__percent--70">
+                                            <div class="skills__item__percent--70 aos-animate" data-aos="zoom-in-right" data-aos-delay="100" data-aos-duration="600" data-aos-easing=ease-in-out>
     
                                             </div>
                                         </div>
@@ -329,7 +345,7 @@
                                         </div>
                                         
                                         <div class="skills__item__percent-wrapper">
-                                            <div class="skills__item__percent--60">
+                                            <div class="skills__item__percent--60 aos-animate" data-aos="zoom-in-right" data-aos-delay="100" data-aos-duration="600" data-aos-easing=ease-in-out>
     
                                             </div>
                                         </div>
@@ -342,7 +358,7 @@
                                         </div>
                                         
                                         <div class="skills__item__percent-wrapper">
-                                            <div class="skills__item__percent--60">
+                                            <div class="skills__item__percent--60 aos-animate" data-aos="zoom-in-right" data-aos-delay="100" data-aos-duration="600" data-aos-easing=ease-in-out>
     
                                             </div>
                                         </div>
@@ -356,286 +372,164 @@
                 </div>
             </div>
         </div>
+        <!-- Portfolio -->
 
-        <!-- EXPERIENCE SECTION -->
-        <div class="experience">
-            <div class="grid wide">
-                <div class="experience__container">
+        <div id="portfolio" class="portfolio">
+            <div class="grid">
+                <div class="portfolio__container">
                     <div class="category">
-                        <h1>Experience </h1>
+                        <h1>Portfolio</h1>
                     </div>
-
-                    <div class="experience__items">
-                        <div class="row">
-                            <div class="col l-6 m-6 c-12 " data-aos="fade-right">
-                                <div class="exp-item-header">
-                                    <div class="exp-item-header__name">
-                                        <h1>UI/UX Design</h1>
-                                        <p>Designerr Inc. (2012-2014)</p>
-                                    </div>
-
-                                    <div class="exp-item-header__img">
-                                        <img src="./Assets/image/exp/ui-ux.svg" alt="">
+                    <div class="portfolio-imgs">
+                        <div class="row no-gutters">
+                            <div class="col l-3 m-3 c-12">
+                                <div class="portfolio-imgs__box">
+                                    <img src="./Assets/image/Portfolio/Portfolio1.png" alt="" class="portfolio-img">
+                                    <div class="portfolio-content">
+                                        <a class="portfolio-content__link">
+                                            <h1 class="portfolio-content__title">Web Design</h1>
+                                            <p class="portfolio-content__path">Dribbble.com</p>
+                                        </a>
                                     </div>
                                 </div>
 
-                                <div class="exp-item-body">
-                                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews.
-                                        Iterative approaches to corporate strategy foster collaborative thinking to
-                                        further the overall value proposition.</p>
-                                    <p>Organically grow the holistic world view of disruptive innovation via workplace
-                                        diversity and empowerment.</p>
-                                </div>
-                            </div>
-                            <div class="col l-6 m-6 c-12" data-aos="fade-left">
-                                <div class="exp-item-header">
-                                    <div class="exp-item-header__name">
-                                        <h1>App Development</h1>
-                                        <p>MakeMyApp LLC. (2015-2018)</p>
-                                    </div>
+                                <div class="portfolio-imgs__box">
 
-                                    <div class="exp-item-header__img">
-                                        <img src="./Assets/image/exp/app-development.svg" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="exp-item-body">
-                                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews.
-                                        Iterative approaches to corporate strategy foster collaborative thinking to
-                                        further the overall value proposition.</p>
-                                    <p>Organically grow the holistic world view of disruptive innovation via workplace
-                                        diversity and empowerment.</p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col l-6 m-6 c-12" data-aos="fade-right">
-                                <div class="exp-item-header">
-                                    <div class="exp-item-header__name">
-                                        <h1>Web Design</h1>
-                                        <p>Webbie LLC. (2018-2020)</p>
-                                    </div>
-
-                                    <div class="exp-item-header__img">
-                                        <img src="./Assets/image/exp/web-design.svg" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="exp-item-body">
-                                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews.
-                                        Iterative approaches to corporate strategy foster collaborative thinking to
-                                        further the overall value proposition.</p>
-                                    <p>Organically grow the holistic world view of disruptive innovation via workplace
-                                        diversity and empowerment.</p>
-                                </div>
-                            </div>
-                            <div class="col l-6 m-6 c-12" data-aos="fade-left">
-                                <div class="exp-item-header">
-                                    <div class="exp-item-header__name">
-                                        <h1>Full Stack Development</h1>
-                                        <p>Coder Inc. (2020-2021)</p>
-                                    </div>
-
-                                    <div class="exp-item-header__img">
-                                        <img src="./Assets/image/exp/full-stack.svg" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="exp-item-body">
-                                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews.
-                                        Iterative approaches to corporate strategy foster collaborative thinking to
-                                        further the overall value proposition.</p>
-                                    <p>Organically grow the holistic world view of disruptive innovation via workplace
-                                        diversity and empowerment.</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Client section -->
-        <div class="client">
-            <div class="grid wide">
-                <div class="client__container">
-                    <div class="category">
-                        <h1>Client Testimonials </h1>
-                    </div>
-
-                    <div class="client__items">
-                        <div class="row">
-                            <div class="col l-6 m-6 c-12 client-item" data-aos="fade-right">
-                                <div class="client-item-header">
-                                    <div class="client-item-header__icon">
-                                        <i class="fa-solid fa-quote-left"></i>
-                                    </div>
-                                    <div class="client-item-header__comment">
-                                        <p>Walter displays exemplary professionalism and is able to take on challenges. He learns quickly and is an asset to any team.</p>
-                                    </div>
-                                </div>
-
-                                <div class="client-item-body">
-                                    <div class="client-item-body__text">
-                                        <h5>Aiyana</h5>
-                                        <p>CEO / Web Design Company</p>
-                                    </div>
-                                    <img src="./Assets/image/client/client1.jpg" alt="">
-                                    
-                                </div>
-                            </div>
-                            <div class="col l-6 m-6 c-12 client-item" data-aos="fade-left">
-                                <div class="client-item-header">
-                                    <div class="client-item-header__icon">
-                                        <i class="fa-solid fa-quote-left"></i>
-                                    </div>
-                                    <div class="client-item-header__comment">
-                                        <p>Walter displays exemplary professionalism and is able to take on challenges. He learns quickly and is an asset to any team.</p>
-                                    </div>
-                                </div>
-
-                                <div class="client-item-body">
-                                    <div class="client-item-body__text">
-                                        <h5>Alexander</h5>
-                                        <p>CEO / Web Design Company</p>
-                                    </div>
-                                    <img src="./Assets/image/client/client2.jpg" alt="">
-                                    
-                                </div>
-                            </div>
-                            <div class="col l-6 m-6 c-12 client-item" data-aos="fade-right">
-                                <div class="client-item-header">
-                                    <div class="client-item-header__icon">
-                                        <i class="fa-solid fa-quote-left"></i>
-                                    </div>
-                                    <div class="client-item-header__comment">
-                                        <p>Walter displays exemplary professionalism and is able to take on challenges. He learns quickly and is an asset to any team.</p>
-                                    </div>
-                                </div>
-
-                                <div class="client-item-body">
-                                    <div class="client-item-body__text">
-                                        <h5>Ariya</h5>
-                                        <p>Web Developer</p>
-                                    </div>
-                                    <img src="./Assets/image/client/client3.jpg" alt="">
-                                    
-                                </div>
-                            </div>
-                            <div class="col l-6 m-6 c-12 client-item " data-aos="fade-left">
-                                <div class="client-item-header">
-                                    <div class="client-item-header__icon">
-                                        <i class="fa-solid fa-quote-left"></i>
-                                    </div>
-                                    <div class="client-item-header__comment">
-                                        <p>Walter displays exemplary professionalism and is able to take on challenges. He learns quickly and is an asset to any team.</p>
-                                    </div>
-                                </div>
-
-                                <div class="client-item-body">
-                                    <div class="client-item-body__text">
-                                        <h5>Braiden</h5>
-                                        <p>Web Designer</p>
-                                    </div>
-                                    <img src="./Assets/image/client/client4.jpg" alt="">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CONTACT SECTION -->
-        <div class="contact">
-            <div class="grid wide">
-                <div class="contact__container">
-                    <div class="category">
-                        <h1>Contact Me </h1>
-                    </div>
-                    <div class="contact__items">
-                        <div class="row">
-                            <div class="col l-6 m-6 c-12 " >
-                                <div class="contact__input">
-                                    <div class="contact__input--name">
-                                        <label for="">Name</label>
-                                        <input class="contact-form" name="ten" id="input-name" type="text" required>
-                                    </div>
-                                    <div class="contact__input--email">
-                                        <label for="">Email</label>
-                                        <input class="contact-form" id="input-email" name="mail" type="email" required>
-                                    </div>
-                                    <div class="contact__input--message">
-                                        <label  for="">Message</label>
-                                        <textarea class="contact-form" id="input-msg" name="tinnhan" required> </textarea>
-                                    </div>
-                                    <div class="contact__input--btn">
-                                        <button>
-                                            Send
-                                        </button>
+                                    <img src="./Assets/image/Portfolio/Portfolio5.png" alt="" class="portfolio-img">
+                                    <div class="portfolio-content">
+                                        <a class="portfolio-content__link">
+                                            <h1 class="portfolio-content__title">Photography</h1>
+                                            <p class="portfolio-content__path">Adobe Photoshop</p>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col l-3 m-3 c-12">
+                                <div class="portfolio-imgs__box">
+
+                                    <img src="./Assets/image/Portfolio/Portfolio2.png" alt="" class="portfolio-img">
+                                    <div class="portfolio-content">
+                                        <a class="portfolio-content__link">
+                                            <h1 class="portfolio-content__title">Web Development</h1>
+                                            <p class="portfolio-content__path">GitHub.com</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="portfolio-imgs__box">
+
     
-                            <div class="col l-6 m-6 c-12">
-                                <div class="contact__info">
-                                    <div class="contact__info--guide">
-                                        <h3>Let’s talk how I can help you!</h3>
-                                        <p>If you like my work and want to avail my services then drop me a message using the contact form.</p>
-                                        <p>Or get in touch using my email, skype or my contact number.</p>
-                                        <p>See you!</p>
-                                    </div>
-                                    <div class="contact__info--mail">
-                                        <div class="row">
-                                            <div class="col l-2 m-2 c-12 contact__info--mail-title">Email:</div>
-                                            <div class="col l-10 m-10 c-12 contact__info--mail-content">walter@company.com</div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col l-2 m-2 c-12 contact__info--mail-title">Skype:</div>
-                                            <div class="col l-10 m-10 c-12 contact__info--mail-content">username@skype.com</div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col l-2 m-2 c-12 contact__info--mail-title">Phone:</div>
-                                            <div class="col l-10 m-10 c-12 contact__info--mail-content">+0718-111-0011</div>
-                                        </div>
+                                    <img src="./Assets/image/Portfolio/Portfolio6.png" alt="" class="portfolio-img">
+                                    <div class="portfolio-content">
+                                        <a class="portfolio-content__link">
+                                            <h1 class="portfolio-content__title">App Development</h1>
+                                            <p class="portfolio-content__path">Android</p>
+                                        </a>
                                     </div>
                                 </div>
-        <!-- Footer section -->
-        <div class="footer">
-            <div class="grid wide">
-                <div class="footer__container">
-                    <div class="footer-content">
-                        <h3>Walter Patterson</h3>
-                        <p>Web Developer & Mobile Application Developer</p>
-                        <div class="footer-content__list">
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="#"><i class="fa-brands fa-behance"></i></a>
+                            </div>
+                            <div class="col l-3 m-3 c-12">
+                                <div class="portfolio-imgs__box">
+
+                                    <img src="./Assets/image/Portfolio/Portfolio3.png" alt="" class="portfolio-img">
+                                    <div class="portfolio-content">
+                                        <a class="portfolio-content__link">
+                                            <h1 class="portfolio-content__title">Audio Mixing</h1>
+                                            <p class="portfolio-content__path">Soundcloud.com</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="portfolio-imgs__box">
+
+                                    <img src="./Assets/image/Portfolio/Portfolio7.png" alt="" class="portfolio-img">
+                                    <div class="portfolio-content">
+                                        <a class="portfolio-content__link">
+                                            <h1 class="portfolio-content__title">App Design</h1>
+                                            <p class="portfolio-content__path">Flutter</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-3 c-12">
+
+                                <div class="portfolio-imgs__box">
+
+                                    <img src="./Assets/image/Portfolio/Portfolio4.png" alt="" class="portfolio-img">
+                                    <div class="portfolio-content">
+                                        <a class="portfolio-content__link">
+                                            <h1 class="portfolio-content__title">Video Editing</h1>
+                                            <p class="portfolio-content__path">Adobe After Effects</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="portfolio-imgs__box">
+
+                                    <img src="./Assets/image/Portfolio/Portfolio8.png" alt="" class="portfolio-img">
+                                    <div class="portfolio-content">
+                                        <a class="portfolio-content__link">
+                                            <h1 class="portfolio-content__title">App Development</h1>
+                                            <p class="portfolio-content__path">Flutter</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="footer-sources">
-                        <p>© Super Folio. All rights reserved.</p>
-                        <p>Design - <a href="#">TemplateFlip</a></p>
+
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="gallery">
+            <div class="gallery-count">
+                <span class="gallery-count__active">1</span> <span class="gallery-count__fix">/8</span>
+            </div>
+
+
+            <div class="gallery__close">
+                <i class="fa-solid fa-xmark close"></i>
+
+            </div>
+    
+            <div class="galley__inner">
+                
+                <img src="./Assets/image/Portfolio/Portfolio1.png" alt="">
+            </div>
+
+            <div class="control prew">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+
+            <div class="control next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div class="gallery-content">
+                <div class="gallery-content__container">
+                    <h1>Web Design</h1>
+                    <p>Dribbble.com</p>
+                </div>
+
+                <div class="sub-close">
+                    <i class="fa-solid fa-xmark close"></i>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- <div class="test"></div>      -->
     </div>
     <script>
-        AOS.init(); // Thư viện animation
-        var header = document.querySelector('.header')
-        var mobtabMenu = document.querySelector('.mobile-tablet-menu')
-        var headernav = document.querySelector('.header__nav')
-        mobtabMenu.onclick = function(){
-            headernav.classList.toggle("show-mobile-tablet")
-        }
+        AOS.init({
+        
+        }); // Thư viện animation
     </script>
+    <script src="./Assets/js/CV.js"></script>
 </body>
 
 </html>
