@@ -1,13 +1,15 @@
 * {
     box-sizing: border-box;
 }
+.show {
+    display: block !important;
+}
 
 .header {
     display: flex;
     font-size: 20px;
     justify-content: space-between;
-    background-color: #2c2ba5;
-    color: #fff;
+    background-color: #191930;
     position: relative;
 }
 
@@ -15,13 +17,21 @@
     display: flex;
 }
 
-.header__nav li {
+
+.header__nav li{
+    display: flex;
+    align-items: center;
+}
+
+.header__nav li a, .sidebar-btn {
+    color: #fff;
+    text-decoration: none;
     padding: 15px 20px;
     border-right: 1px solid #fff;
 }
 
 .header__hello {
-    display: flex;
+    color: #fff;
     padding: 15px 20px;
 }
 
@@ -43,8 +53,100 @@
     display: none;
 }
 
+#sidebar {
+    background-color: rgba(0, 217, 255, 0.979);
+ 
+}
+
+
+.side__items {
+    list-style: none;
+    width: 200px;
+    border: 2px solid #333;
+    
+}
+
+.side__items a{
+    text-decoration: none;
+    color: #000;
+    line-height: 1.6;
+}
+
+
+ 
+.side__item--posts .posts__nav {
+    display: none;
+    list-style: none;
+    font-size: 16px;
+    margin-top: 10px;  
+}
+
+.side__item--posts .posts__nav li {
+    border-top: 0.5px solid #ccc;
+    padding-left: 8px;
+}
+
+.posts__nav li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.posts--open {
+    display: block !important;
+}
+
+.posts--icon {
+    font-size: 20px;
+    margin-left: 20px;
+
+}
+/* .icon--none{
+    display: none;
+} */
+
+/* .side__item--posts:hover .posts__nav {
+    display: block;
+    
+} */
+
+
+
+.up-down-icon {
+    display: inline-block;
+    padding: 0 15px;
+    margin-left: 45px;
+}
+
+.up-down-icon i {
+    margin:auto;
+}
+
+.side__item {
+    font-size: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #000;
+}
+
+.side__item:last-child {
+    border-bottom: none;
+}
+
+.mobile-item {
+    display: none;
+}
+
+.side__item .sidebar--icon {
+    padding: 4px;
+}
+
 @media (max-width:740px)
 {
+
+
+    .header {
+        font-size: 16px;
+    }
 
     .header__nav li {
         display: none;
@@ -55,5 +157,17 @@
         display: block !important;
     }
 
-    
+    .back-to-CV {
+        align-self: center;
+    }
+
+    #sidebar {
+        display: none;
+    }
+
+    .mobile-item {
+        display: block;
+    }
 }
+
+  
