@@ -33,6 +33,7 @@
 .header__hello {
     color: #fff;
     padding: 15px 20px;
+    cursor: pointer;
 }
 
 .header__hello i {
@@ -47,6 +48,7 @@
     background-color: #333;
     color: #fff;
     display: none;
+    cursor: pointer;
 }
 
 .sidebar-btn {
