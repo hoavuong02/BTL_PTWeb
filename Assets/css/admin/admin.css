@@ -1,0 +1,44 @@
+main {
+    display: flex;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+}
+
+.container-number-member {
+    margin: auto;
+}
+
+.number-member {
+    width: 160px;
+    height: 130px;
+    border-radius: 20%;
+    background-color: red;
+    text-align: center;
+    line-height: 130px;
+    font-size: 70px;
+    color: #fff;
+}
+
+h1 {
+    font-size: 30px;  
+}
+
+.help {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.help p {
+    font-size: 20px;
+}
+
+
+@media (max-width: 740px)
+{
+    .help {
+        display: none;
+    }
+}
