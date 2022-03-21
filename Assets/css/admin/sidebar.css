@@ -83,6 +83,11 @@
     margin-top: 10px;  
 }
 
+.posts__nav, .posts__nav a {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
 .side__item--posts .posts__nav li {
     border-top: 0.5px solid #ccc;
     padding-left: 8px;
