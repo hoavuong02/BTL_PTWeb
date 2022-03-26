@@ -1,0 +1,164 @@
+
+  
+/* form */
+.skillform__table{
+    width: 90%;
+    margin: 130px auto 0px;
+    position: relative;
+}
+.skillform__table__key{
+
+}
+.skillform__table__rows{
+
+}
+.skillform__table-action{
+
+}
+.action-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.action-btn{
+    margin: 8px 10px;
+    width: 32%;
+    height: 34px;
+    cursor: pointer;
+}
+table, th, td {
+    border:3px solid black;
+}
+.skillform__table__key th{
+    font-size: 21px;
+    padding: 5px;
+    font-weight: 600;
+}
+.skillform__table__rows td{
+    text-align: center;
+}
+
+.modal{
+    background-color: rgba(1,1,1,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: azure;
+    display: none;
+}
+.modal-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal-box{
+    background-color: #F8F7F5;
+    color: #969493;
+    width: 556px;
+    height: 281px;
+    padding-left: 29px;
+    padding-top: 36px;
+    box-shadow: 5px 6px 7px 1px #c1bfbe;
+    border-radius: 4px;
+}
+.modal__row1{
+    margin: 21px 0;
+    display: flex;
+    align-items: center;
+}
+.modal__row1 span{
+    padding: 0px 25px;
+   
+}
+.modal__row1 input{
+    width: 60%;
+    margin-left: 42px;
+    padding: 5px;
+}
+.modal__row2{
+    display: flex;
+    align-items: center;
+}
+.modal__row2 span{
+    
+}
+.modal__row2 input{
+    width: 60%;
+    margin-left: 38px;
+    padding: 5px;
+
+}
+.modal-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 23px;
+}
+.modal__save{
+
+}
+.btn{
+    padding: 6px 32px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
+.modal__Cancle{
+
+}
+
+/*modal-Delete  */
+.modal-Delete{
+    background-color: rgba(1,1,1,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: azure;
+   display: none;
+}
+.modal-box2{
+    background-color: #F8F7F5;
+    color: #969493;
+    width: 556px;
+    height: 185px;
+    padding-top: 36px;
+    box-shadow: 5px 6px 7px 1px #c1bfbe;
+    border-radius: 4px;
+}
+.modal-box2 h1{
+    font-size: 30px;
+    text-align: center;
+}
+.modal-Delete__btn{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.but{
+    width: 94px;
+    height: 48px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
+.but-delete{
+
+}
+.but-cancle{
+
+}
+.function-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #EFEFF6;
+}
