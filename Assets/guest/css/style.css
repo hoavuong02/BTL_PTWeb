@@ -56,7 +56,7 @@ nav {
     text-align: center;
     color: white;
     height: 650px;
-    background-image: url('../image/index_img/img1.jpg');
+    background-image: url('../../image/index_img/img1.jpg');
     background-size: cover;
     background-attachment: fixed;
 }

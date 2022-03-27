@@ -123,7 +123,7 @@ table, th, td {
     color: azure;
    display: none;
 }
-.modal-box2{
+/* .modal-box2{
     background-color: #F8F7F5;
     color: #969493;
     width: 556px;
@@ -155,7 +155,7 @@ table, th, td {
 }
 .but-cancle{
 
-}
+} */
 .function-container{
     display: flex;
     flex-direction: column;
