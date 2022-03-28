@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../library/reset.css">
+    <link rel="stylesheet" href="../../library/grid.css">
+    <link rel="stylesheet" href="../Templates/sidebar.css">
+    <link rel="stylesheet" href="../Templates/table_form.css">
+    <link rel="stylesheet" href="../css/member.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Member</title>
+</head>
+<body>
+    <div class="header">
+        <ul class="header__nav">
+            <div class="sidebar-btn"><i class="fa-solid fa-bars"></i></div>
+            <li><a href="#">Admin</a></li>
+            <li class="back-to-CV"> <a href="#"><i class="fa-solid fa-rotate-left"></i>Về trang web</a>
+            </li>
+            <li><a href="#">Hướng dẫn</a></li>
+            <li><a href="#">Hỗ trợ</a></li>
+        </ul>
+
+        <div class="header__hello">
+            Xin chào: admin <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="log-out">Đăng xuất</div>
+    </div>
+
+    <div class="body-container">
+        <div class="grid"> 
+                <div class="row no-gutters ">
+                    <div class="col l-2 m-3">
+                        <div class="sliderbar-container">               
+                            <ul id="sidebar" class="side__items">
+                                <li class="side__item side__item--members"><a href=""><i class="sidebar--icon fa-solid fa-person"></i>Thành viên</a></li>
+                                <li class="side__item side__item--posts js-posts--open">
+                                    <a href="#">
+                                        <i class="sidebar--icon fa-solid fa-newspaper"></i>
+                                        Bài viết
+                                        <div class="up-down-icon">
+                                            <i class="posts--icon  fa-solid fa-angle-down"></i>
+                                        </div>
+                                    </a>
+                                    <ul class="posts__nav">
+                                        <li><a href="#">- Giới thiệu</a></li>
+                                        <li><a href="#">- Dịch vụ</a></li>
+                                        <li><a href="#">- Kĩ năng</a></li>
+                                        <li><a href="#">- Lĩnh vực</a></li>
+                                        <li><a href="#">- Kinh nghiệm</a></li>
+                                        <li><a href="#">- Liên hệ</a></li>
+                                    </ul>    
+                                </li>
+                                <li class="side__item side__item--contact"><a href=""><i class="sidebar--icon fa-solid fa-address-card"></i>Liên hệ</a></li>
+                                <li class="side__item mobile-item">
+                                   <a href="#">Hướng dẫn</a> 
+                                </li>
+                                <li class="side__item mobile-item">
+                                    <a href="#">Hỗ Trợ</a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-10 m-9">
+                        <div class="body-content">
+                            <div class="function-wrapper">
+                                <div class="row">
+                                    <div class="col l-6 m-6 c-12">
+                                        <button class="action-add">
+                                            Thêm mới <i class="fa-solid fa-circle-plus"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col l-6 m-6 c-12">
+                                        <div class="function__search-box">
+                                            <input type="text" class="function__search__input"> <button
+                                                class="function__search__btn">Tìm Kiếm</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="table-container">
+                    
+                                <table class="form__table">
+                                    <tr class="form__table__key">
+                                        <th>STT</th>
+                                        <th>Tên</th>
+                                        <th>Chức vụ</th>
+                                        <th>Tác vụ</th>
+                                    </tr>
+                                    <tr class="form__table__rows">
+                                        <td>01</td>
+                                        <td>Đàm Viết Vương</td>
+                                        <td>Admin</td>
+                                        <td>
+                                            <div class="form__table-action">
+                                                <div class="action-wrapper">
+                                                    <button class="action-btn action-edit">Sửa</button>
+                                                    <button class="action-btn action-delete">Xóa</button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="form__table__rows">
+                                        <td>02</td>
+                                        <td>Nguyễn Mạnh Tiến</td>
+                                        <td>Admin</td>
+                                        <td>
+                                            <div class="form__table-action">
+                                                <div class="action-wrapper">
+                                                    <button class="action-btn action-edit">Sửa</button>
+                                                    <button class="action-btn action-delete">Xóa</button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="form__table__rows">
+                                        <td>03</td>
+                                        <td>Bùi Đức Tùng</td>
+                                        <td>Member</td>
+                                        <td>
+                                            <div class="form__table-action">
+                                                <div class="action-wrapper">
+                                                    <button class="action-btn action-edit">Sửa</button>
+                                                    <button class="action-btn action-delete">Xóa</button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal">
+                            <div class="modal-container">
+                                <div class="modal-box">
+
+                                    <div class="modal__row">
+                                        <label for="" class="modal-name">Tên</label> 
+                                        <input type="text" class="modal__input">
+                                    </div>
+                                    <div class="modal__row">
+                                        <label for="" class="modal-name">Chức vụ</label> 
+                                        <input type="text" class="modal__input">
+                                    </div>
+                    
+                                    <div class="modal-btn">
+                                        <button class="btn modal__save">Lưu</button>
+                                        <button class="btn modal__Cancle">Hủy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="modal-Delete">
+                            <div class="modal-container">
+                                <div class="modal-box2">
+                                    <h1>Bạn có chắc chắn muốn xóa</h1>
+                                    <div class="modal-Delete__btn">
+                                        <button class="but but-delete">XÓA</button>
+                                        <button class="but but-cancle">HỦY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+
+
+    <script src="../Templates/sidebar.js"></script>
+    <script src="../Templates/table_form.js"></script>
+</body>
+</html>
