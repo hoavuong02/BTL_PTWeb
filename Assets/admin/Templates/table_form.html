@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../../library/reset.css">
+    <link rel="stylesheet" href="../../library/grid.css">
+    <link rel="stylesheet" href="./table_form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="body-content">
+        <div class="function-wrapper">
+            <div class="row">
+                <div class="col l-6 m-6 c-12">
+                    <button class="action-add">
+                        Thêm mới <i class="fa-solid fa-circle-plus"></i>
+                    </button>
+                </div>
+                <div class="col l-6 m-6 c-12">
+                    <div class="function__search-box">
+                        <input type="text" class="function__search__input"> <button
+                            class="function__search__btn">Tìm Kiếm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-container">
+
+            <table class="form__table">
+                <tr class="form__table__key">
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Mức độ thông thạo(%)</th>
+                    <th>Tác vụ</th>
+                </tr>
+                <tr class="form__table__rows">
+                    <td>01</td>
+                    <td>HTML5</td>
+                    <td>90</td>
+                    <td>
+                        <div class="form__table-action">
+                            <div class="action-wrapper">
+                                <button class="action-btn action-edit">Sửa</button>
+                                <button class="action-btn action-delete">Xóa</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="form__table__rows">
+                    <td>01</td>
+                    <td>HTML5</td>
+                    <td>90</td>
+                    <td>
+                        <div class="form__table-action">
+                            <div class="action-wrapper">
+                                <button class="action-btn action-edit">Sửa</button>
+                                <button class="action-btn action-delete">Xóa</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="form__table__rows">
+                    <td>01</td>
+                    <td>HTML5</td>
+                    <td>90</td>
+                    <td>
+                        <div class="form__table-action">
+                            <div class="action-wrapper">
+                                <button class="action-btn action-edit">Sửa</button>
+                                <button class="action-btn action-delete">Xóa</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="form__table__rows">
+                    <td>01</td>
+                    <td>HTML5</td>
+                    <td>90</td>
+                    <td>
+                        <div class="form__table-action">
+                            <div class="action-wrapper">
+                                <button class="action-btn action-edit">Sửa</button>
+                                <button class="action-btn action-delete">Xóa</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-box">
+
+                <div class="modal__row">
+                    <label for="" class="modal-name">Tên</label> 
+                    <input type="text" class="modal__input">
+                </div>
+                <div class="modal__row">
+                    <label for="" class="modal-name">Thông thạo</label> 
+                    <input type="text" class="modal__input">
+                </div>
+
+                <div class="modal-btn">
+                    <button class="btn modal__save">Lưu</button>
+                    <button class="btn modal__Cancle">Hủy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-Delete">
+        <div class="modal-container">
+            <div class="modal-box2">
+                <h1>Bạn có chắc chắn muốn xóa</h1>
+                <div class="modal-Delete__btn">
+                    <button class="but but-delete">XÓA</button>
+                    <button class="but but-cancle">HỦY</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./table_form.js"></script>
+</body>
+
+</html>
