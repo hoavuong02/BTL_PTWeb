@@ -31,3 +31,8 @@
 .but-cancle{
 
 }
+@media (max-width: 739px){
+    .modal-box2{
+        width: 94%;
+    }
+}
