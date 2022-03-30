@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../../library/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="login" class="login__container">
+        <div class="c-8 m-8 login__item-left">
+            <h1> Welcome</h1>
+            <h1>Administrator</h1>
+            <i class="item__left-icon fa-solid fa-lock"></i>
+        </div>
+        <div class="c-4 m-4 login__item-right">
+            <h2>Login</h2>
+            <div class="img-background">
+            </div>
+
+            <form id="login-form">
+                <div>
+                    <input type="text" id="username" name="username" placeholder="Username"></i>
+                    <span id="userError"></span>
+                </div>
+                <div>
+                    <input type="text" id="email" name="password" placeholder="Password"></i>
+                    <span id="passwordError"></span>
+                </div>
+                <div >
+                    <button class="login-btn" type="submit" id="submit">Login</button>
+                </div>
+            </form>
+            <div class="login_create">
+                <a class="moveRe" href="#">Forgot password</a>
+            </div>
+        </div>
+        <div class="login__item-forgot">
+            <h2>Enter your email</h2>
+            <form id="forgot-form">
+                <div>
+                    <input type="email" id="email" name="email" placeholder="Email"></i>
+                    <span id="emailError"></span>
+                </div>
+                <div >
+                    <button class="login-btn" type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+            <div class="login-back">
+                <a class="moveLo" href="#">Back to login</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var changeRegister = document.querySelector('.login__item-forgot')
+        var changeLogin = document.querySelector('.login__item-right')
+        var moveToRegister = document.querySelector(".moveRe")
+        var moveToLogin = document.querySelector(".moveLo")
+
+        function showRe() {
+            changeRegister.classList.add('dis-flex')
+            changeLogin.classList.add('dis-none')
+        }
+
+        function showLo() {
+            changeRegister.classList.remove('dis-flex')
+            changeLogin.classList.remove('dis-none')
+        }
+
+        moveToRegister.addEventListener('click', showRe)
+        moveToLogin.addEventListener('click', showLo)
+    </script>
+</body>
+
+</html>

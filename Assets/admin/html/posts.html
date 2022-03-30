@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,13 @@
     <link rel="stylesheet" href="../../library/grid.css">
     <link rel="stylesheet" href="../Templates/sidebar.css">
     <link rel="stylesheet" href="../Templates/table_form.css">
+    <link rel="stylesheet" href="../css/posts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>Experience</title>
+    <title>posts</title>
 </head>
+
 <body>
-     <div class="header">
+    <div class="header">
         <ul class="header__nav">
             <div class="sidebar-btn"><i class="fa-solid fa-bars"></i></div>
             <li><a href="#">Admin</a></li>
@@ -66,14 +69,9 @@
                     </div>
                 </div>
                 <div class="col l-10 m-9">
-                    <div class="box-container">
+                    <div class="body-content">
                         <div class="function-wrapper">
                             <div class="row">
-                                <div class="col l-6 m-6 c-12">
-                                    <button class="action-add">
-                                        Thêm mới <i class="fa-solid fa-circle-plus"></i>
-                                    </button>
-                                </div>
                                 <div class="col l-6 m-6 c-12">
                                     <div class="function__search-box">
                                         <input type="text" class="function__search__input"> <button
@@ -83,8 +81,8 @@
                             </div>
                         </div>
 
-                        <div class="table-container"> 
-
+                        <div class="table-container">
+                            <h3>Chọn một thành viên bạn muốn chỉnh sửa</h3>
                             <table class="form__table">
                                 <tr class="form__table__key">
                                     <th>STT</th>
@@ -93,97 +91,46 @@
                                 </tr>
                                 <tr class="form__table__rows">
                                     <td>01</td>
-                                    <td>UI/UX Design</td>
+                                    <td>Đàm Viết Vương</td>
                                     <td>
                                         <div class="form__table-action">
                                             <div class="action-wrapper">
-                                                <button class="action-btn action-edit">Sửa</button>
-                                                <button class="action-btn action-delete">Xóa</button>
+                                                <a href="../html/member.html">Chỉnh sửa</a>
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr class="form__table__rows">
                                     <td>02</td>
-                                    <td>App Development</td>
+                                    <td>Bùi Đức Tùng</td>
                                     <td>
                                         <div class="form__table-action">
                                             <div class="action-wrapper">
-                                                <button class="action-btn action-edit">Sửa</button>
-                                                <button class="action-btn action-delete">Xóa</button>
+                                                <a href="../html/member.html">Chỉnh sửa</a>
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr class="form__table__rows">
                                     <td>03</td>
-                                    <td>Web Design</td>
+                                    <td>Nguyễn Mạnh Tiến</td>
                                     <td>
                                         <div class="form__table-action">
                                             <div class="action-wrapper">
-                                                <button class="action-btn action-edit">Sửa</button>
-                                                <button class="action-btn action-delete">Xóa</button>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="form__table__rows">
-                                    <td>04</td>
-                                    <td>Full Stack Development</td>
-                                    <td>
-                                        <div class="form__table-action">
-                                            <div class="action-wrapper">
-                                                <button class="action-btn action-edit">Sửa</button>
-                                                <button class="action-btn action-delete">Xóa</button>
+                                                <a href="../html/member.html">Chỉnh sửa</a>
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
                             </table>
-                       </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
-    <div class="modal">
-        <div class="modal-container">
-            <div class="modal-box">
-
-                <div class="modal__row">
-                    <label for="" class="modal-name">Tên</label> 
-                    <input type="text" class="modal__input" placeholder="Nhập tên">
-                </div>
-                <div class="modal__row">
-                    <label for="" class="modal-name">Mô tả</label> 
-                    <input type="text" class="modal__input" placeholder="Nhập mô tả">
-                </div>
-                <div class="modal__row">
-                    <label for="" class="modal-name">Ảnh</label> 
-                    <input type="file" class="modal__input" placeholder="Chọn Ảnh">
-                </div>
-                <div class="modal-btn">
-                    <button class="btn modal__save">Lưu</button>
-                    <button class="btn modal__Cancle">Hủy</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal-Delete">
-        <div class="modal-container">
-            <div class="modal-box2">
-                <h1>Bạn có chắc chắn muốn xóa</h1>
-                <div class="modal-Delete__btn">
-                    <button class="but but-delete">XÓA</button>
-                    <button class="but but-cancle">HỦY</button>
-                </div>
-            </div>
-        </div>
-    </div>
     <script src="../Templates/sidebar.js"></script>
-    <script src="../Templates/table_form.js"></script>
 </body>
+
 </html>

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../Templates/sidebar.css">
     <link rel="stylesheet" href="../Templates/table_form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>Experience</title>
+    <title>Service</title>
 </head>
 <body>
      <div class="header">
@@ -68,17 +68,11 @@
                 <div class="col l-10 m-9">
                     <div class="box-container">
                         <div class="function-wrapper">
-                            <div class="row">
+                            <div class="row" style="text-align: end;">
                                 <div class="col l-6 m-6 c-12">
                                     <button class="action-add">
                                         Thêm mới <i class="fa-solid fa-circle-plus"></i>
                                     </button>
-                                </div>
-                                <div class="col l-6 m-6 c-12">
-                                    <div class="function__search-box">
-                                        <input type="text" class="function__search__input"> <button
-                                            class="function__search__btn">Tìm Kiếm</button>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -88,12 +82,12 @@
                             <table class="form__table">
                                 <tr class="form__table__key">
                                     <th>STT</th>
-                                    <th>Tên</th>
+                                    <th>Mô tả</th>
                                     <th>Tác vụ</th>
                                 </tr>
                                 <tr class="form__table__rows">
                                     <td>01</td>
-                                    <td>UI/UX Design</td>
+                                    <td>UI-UX</td>
                                     <td>
                                         <div class="form__table-action">
                                             <div class="action-wrapper">
@@ -105,7 +99,7 @@
                                 </tr>
                                 <tr class="form__table__rows">
                                     <td>02</td>
-                                    <td>App Development</td>
+                                    <td>Graphic design</td>
                                     <td>
                                         <div class="form__table-action">
                                             <div class="action-wrapper">
@@ -127,18 +121,6 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="form__table__rows">
-                                    <td>04</td>
-                                    <td>Full Stack Development</td>
-                                    <td>
-                                        <div class="form__table-action">
-                                            <div class="action-wrapper">
-                                                <button class="action-btn action-edit">Sửa</button>
-                                                <button class="action-btn action-delete">Xóa</button>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
                             </table>
                        </div>
                     </div>
@@ -151,18 +133,13 @@
     <div class="modal">
         <div class="modal-container">
             <div class="modal-box">
-
                 <div class="modal__row">
-                    <label for="" class="modal-name">Tên</label> 
-                    <input type="text" class="modal__input" placeholder="Nhập tên">
+                    <label for="" class="modal-name">Ảnh</label> 
+                    <input type="file" class="modal__input" placeholder="Chọn Ảnh">
                 </div>
                 <div class="modal__row">
                     <label for="" class="modal-name">Mô tả</label> 
                     <input type="text" class="modal__input" placeholder="Nhập mô tả">
-                </div>
-                <div class="modal__row">
-                    <label for="" class="modal-name">Ảnh</label> 
-                    <input type="file" class="modal__input" placeholder="Chọn Ảnh">
                 </div>
                 <div class="modal-btn">
                     <button class="btn modal__save">Lưu</button>
