@@ -1,0 +1,131 @@
+.action-fix,.action-remove,.action-plus{
+    width: 143px;
+    max-width: 100%;
+    height: 44px;
+    cursor: pointer;
+    font-size: 19px;
+    border-radius: 5px;
+    transition: transform linear 0.2s;
+}
+.action-fix:hover,.action-remove:hover,.action-plus:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+.reverse{
+
+}
+.action-add-box{
+    width: 70vw;
+    text-align: end;
+}
+
+.modal-desc{
+    background-color: rgba(1,1,1,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: azure;
+    display: none;
+}
+.modaldesc-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modaldesc-box{
+    background-color: #F8F7F5;
+    color: #969493;
+    width: 556px;
+    height: 281px;
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-top: 36px;
+    box-shadow: 5px 6px 7px 1px #c1bfbe;
+    border-radius: 4px;
+}
+.modaldesc__row{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.modaldesc-name {
+    width: 100px;
+    font-size: 20px;
+}
+
+.modaldesc__input {
+    flex: 1;
+    padding: 8px 4px;
+    font-size: 16px;
+}
+
+
+.modaldesc-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 23px;
+}
+.modaldesc__save{
+
+}
+.btn{
+    padding: 6px 32px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
+.modaldesc__Cancle{
+
+}
+/* Mobile and tablet */
+@media(max-width: 992px){
+    .reverse{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .desc-wrapper{
+        display: flex;
+        justify-content: space-around;
+    }
+    .function__search-box{
+        justify-content: center;
+        padding-bottom: 14px;
+    }
+    .form__table{
+        margin-top: 190px;
+    }
+    .action-add-box{
+        padding-bottom: 10px;
+    }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 992px){
+
+}
+/* Mobile */
+@media (max-width: 739px){
+    .desc-wrapper{
+        width: 315px;
+    }
+    #sidebar{
+        top: 45px;
+    }
+    .action-add{
+        width: 210px;
+    }
+    .modaldesc-box {
+        padding-left: 0;
+        width: 336px;
+    }
+    
+    .modaldesc__row {
+        padding: 8px;
+    }
+}
