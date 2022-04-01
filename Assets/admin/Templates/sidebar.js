@@ -13,7 +13,7 @@ helloAdmin.addEventListener('click', function () {
 })
 
 
-var openPostsNavIcon = document.querySelector('.js-posts--open')
+var openPostsNavIcon = document.querySelector('.up-down-icon')
 var onOffpostsNav = document.querySelector('.posts__nav')
 
 function showPosts() {

@@ -1,0 +1,5 @@
+.posts__nav,
+.posts__nav a {
+    opacity: 1;
+    cursor: pointer;
+}
