@@ -79,8 +79,8 @@
                                 </div>
                                 <div class="col l-6 m-6 c-12">
                                     <div class="function__search-box">
-                                        <input type="text" class="function__search__input"> <button
-                                            class="function__search__btn">Tìm Kiếm</button>
+                                        <input type="text" class="function__search__input"> 
+                                        <button class="function__search__btn">Tìm Kiếm</button>
                                     </div>
                                 </div>
                             </div>
@@ -166,8 +166,9 @@
                 </div>
                 <div class="modal__row">
                     <label for="" class="modal-name">Thông thạo</label> 
-                    <input type="text" class="modal__input" placeholder="Nhập mức độ thông thạo">
+                    <input type="text" class="modal__input Proficient" placeholder="Nhập mức độ thông thạo">
                 </div>
+                <div class="Proficient-error"></div>
                 <div class="modal-btn">
                     <button class="btn modal__save">Lưu</button>
                     <button class="btn modal__Cancle">Hủy</button>
@@ -190,7 +191,31 @@
 
     <script src="../Templates/sidebar.js"></script>
     <script src="../Templates/table_form.js"></script>
-    
-</body>
+    <script>
+        var Proficient = document.querySelector(".Proficient")
+        var ProficientError = document.querySelector(".Proficient-error")
 
+        function checkProficient(number){
+            var ProficientRegex =  /^[0-9]+$/
+            return ProficientRegex.test(number)
+        }
+
+        Proficient.addEventListener("change",function(){
+            if(checkProficient(Proficient.value) && (Proficient.value>=0 && Proficient.value<=100)){
+                
+                ProficientError.textContent = ""
+                modalSave.disabled = false
+                modalSave.style.opacity = "1"
+            }
+            else{
+                ProficientError.textContent = "must be numeric and number >=0 and <=100"
+                ProficientError.style.color = "red"
+                ProficientError.style.marginLeft = "100px"
+                modalSave.disabled = true
+                modalSave.style.opacity = "0.4"
+            }
+        })
+        
+    </script>
+</body>
 </html>

@@ -137,8 +137,9 @@
 
                                     <div class="modal__row">
                                         <label for="" class="modal-name">Tên</label> 
-                                        <input type="text" class="modal__input" placeholder="Nhập tên">
+                                        <input type="text" class="modal__input Name" placeholder="Nhập tên">
                                     </div>
+                                    <div class="Name-error"></div>
                                     <div class="modal__row">
                                         <label for="" class="modal-name">Chức vụ</label> 
                                         <input type="text" class="modal__input" placeholder="Nhập chức vụ">
@@ -172,5 +173,27 @@
 
     <script src="../Templates/sidebar.js"></script>
     <script src="../Templates/table_form.js"></script>
+    <script>
+        var Name = document.querySelector(".Name")
+        var nameEerror = document.querySelector(".Name-error")
+        
+        function checkinputName(Name){
+            var NameRegex = /^[a-zA-Z ]{1,30}$/
+            return NameRegex.test(Name)
+        }
+        Name.addEventListener("change",function(){
+            if(checkinputName(Name.value)){
+                nameEerror.textContent =""
+                modalSave.disabled = false
+                modalSave.style.opacity = "1"
+            }else{
+                nameEerror.textContent = "Must be alphabetic"
+                nameEerror.style.color = "red"
+                nameEerror.style.marginLeft = "100px"
+                modalSave.disabled = true
+                modalSave.style.opacity = "0.4"
+            }
+        })
+    </script>
 </body>
 </html>
