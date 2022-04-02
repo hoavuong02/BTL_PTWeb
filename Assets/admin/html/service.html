@@ -13,20 +13,20 @@
     <title>Service</title>
 </head>
 <body>
-     <div class="header">
+    <div class="header">
         <ul class="header__nav">
             <div class="sidebar-btn"><i class="fa-solid fa-bars"></i></div>
             <li><a href="./admin.html">Admin</a></li>
-            <li class="back-to-CV"> <a href="#"><i class="fa-solid fa-rotate-left"></i>Về trang web</a>
+            <li class="back-to-home"> <a href="#"><i class="fa-solid fa-rotate-left"></i>Back to home</a>
             </li>
-            <li><a href="#">Hướng dẫn</a></li>
-            <li><a href="#">Hỗ trợ</a></li>
+            <li><a href="#">Guide</a></li>
+            <li><a href="#">Help</a></li>
         </ul>
 
         <div class="header__hello">
-            Xin chào: admin <i class="fa-solid fa-caret-down"></i>
+            Hello: admin <i class="fa-solid fa-caret-down"></i>
         </div>
-        <div class="log-out">Đăng xuất</div>
+        <a class="log-out">Log out</a>
     </div>
 
     <div class="body-container">
@@ -37,31 +37,31 @@
                     <div class="sliderbar-container">
                         <ul id="sidebar" class="side__items">
                             <li class="side__item side__item--members"><a href="./member.html"><i
-                                        class="sidebar--icon fa-solid fa-person"></i>Thành viên</a></li>
+                                        class="sidebar--icon fa-solid fa-person"></i>Ctrl Contact</a></li>
                             <li class="side__item side__item--posts js-posts--open">
                                 <a href="./posts.html">
                                     <i class="sidebar--icon fa-solid fa-newspaper"></i>
-                                    Bài viết
+                                    Ctrl Posts
                                 </a>
                                 <div class="up-down-icon">
                                     <i class="posts--icon  fa-solid fa-angle-down"></i>
                                 </div>
                                 <ul class="posts__nav">
-                                    <li><a href="./about.html">- Giới thiệu</a></li>
-                                    <li><a href="#">- Dịch vụ</a></li>
-                                    <li><a href="./skill.html">- Kĩ năng</a></li>
-                                    <li><a href="./portfolio.html">- Lĩnh vực</a></li>
-                                    <li><a href="./experience.html">- Kinh nghiệm</a></li>
-                                    <li><a href="./contact.html">- Liên hệ</a></li>
+                                    <li><a href="./about.html">About</a></li>
+                                    <li style="background-color: dodgerblue;"><a href="#">Services</a></li>
+                                    <li><a href="./skill.html">Skills</a></li>
+                                    <li><a href="./portfolio.html">Portfolios</a></li>
+                                    <li><a href="./experience.html">Experiences</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
                                 </ul>
                             </li>
                             <li class="side__item side__item--contact"><a href=""><i
-                                        class="sidebar--icon fa-solid fa-address-card"></i>Liên hệ</a></li>
+                                        class="sidebar--icon fa-solid fa-address-card"></i>Ctrl Contact</a></li>
                             <li class="side__item mobile-item">
-                                <a href="#">Hướng dẫn</a>
+                                <a href="#">Guide</a>
                             </li>
                             <li class="side__item mobile-item">
-                                <a href="#">Hỗ Trợ</a>
+                                <a href="#">Help</a>
                             </li>
                         </ul>
                     </div>
@@ -72,7 +72,7 @@
                             <div class="row" style="text-align: end;">
                                 <div class="col l-6 m-6 c-12">
                                     <button class="action-add">
-                                        Thêm mới <i class="fa-solid fa-circle-plus"></i>
+                                        Add <i class="fa-solid fa-circle-plus"></i>
                                     </button>
                                 </div>
                             </div>
@@ -82,9 +82,9 @@
 
                             <table class="form__table">
                                 <tr class="form__table__key">
-                                    <th>STT</th>
-                                    <th>Mô tả</th>
-                                    <th>Tác vụ</th>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Tasks</th>
                                 </tr>
                                 <tr class="form__table__rows">
                                     <td>01</td>
@@ -92,8 +92,8 @@
                                     <td>
                                         <div class="form__table-action">
                                             <div class="action-wrapper">
-                                                <button class="action-btn action-edit">Sửa</button>
-                                                <button class="action-btn action-delete">Xóa</button>
+                                                <button class="action-btn action-edit">Edit</button>
+                                                <button class="action-btn action-delete">Del</button>
                                             </div>
                                         </div>
                                     </td>
@@ -104,8 +104,8 @@
                                     <td>
                                         <div class="form__table-action">
                                             <div class="action-wrapper">
-                                                <button class="action-btn action-edit">Sửa</button>
-                                                <button class="action-btn action-delete">Xóa</button>
+                                                <button class="action-btn action-edit">Edit</button>
+                                                <button class="action-btn action-delete">Del</button>
                                             </div>
                                         </div>
                                     </td>
@@ -116,8 +116,8 @@
                                     <td>
                                         <div class="form__table-action">
                                             <div class="action-wrapper">
-                                                <button class="action-btn action-edit">Sửa</button>
-                                                <button class="action-btn action-delete">Xóa</button>
+                                                <button class="action-btn action-edit">Edit</button>
+                                                <button class="action-btn action-delete">Del</button>
                                             </div>
                                         </div>
                                     </td>
@@ -135,16 +135,16 @@
         <div class="modal-container">
             <div class="modal-box">
                 <div class="modal__row">
-                    <label for="" class="modal-name">Ảnh</label> 
-                    <input type="file" class="modal__input" placeholder="Chọn Ảnh">
+                    <label for="" class="modal-name">Image</label> 
+                    <input type="file" class="modal__input" placeholder="Choose image">
                 </div>
                 <div class="modal__row">
-                    <label for="" class="modal-name">Mô tả</label> 
-                    <input type="text" class="modal__input" placeholder="Nhập mô tả">
+                    <label for="" class="modal-name">Name</label> 
+                    <input type="text" class="modal__input" placeholder="Type name">
                 </div>
                 <div class="modal-btn">
-                    <button class="btn modal__save">Lưu</button>
-                    <button class="btn modal__Cancle">Hủy</button>
+                    <button class="btn modal__save">Save</button>
+                    <button class="btn modal__Cancle">Cancle</button>
                 </div>
             </div>
         </div>
@@ -153,10 +153,10 @@
     <div class="modal-Delete">
         <div class="modal-container">
             <div class="modal-box2">
-                <h1>Bạn có chắc chắn muốn xóa</h1>
+                <h1>Do you want to delete?</h1>
                 <div class="modal-Delete__btn">
-                    <button class="but but-delete">XÓA</button>
-                    <button class="but but-cancle">HỦY</button>
+                    <button class="but but-delete">Delete</button>
+                    <button class="but but-cancle">Cancel</button>
                 </div>
             </div>
         </div>

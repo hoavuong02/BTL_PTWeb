@@ -8,26 +8,63 @@
     <link rel="stylesheet" href="../../library/reset.css">
     <link rel="stylesheet" href="../../library/grid.css">
     <link rel="stylesheet" href="../Templates/sidebar.css">
-    <link rel="stylesheet" href="../css/admin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Admin</title>
+    <style>
+        h1 {
+            font-size: 30px;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container-number-member {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .number-member {
+            width: 160px;
+            height: 130px;
+            border-radius: 20%;
+            background-color: red;
+            text-align: center;
+            line-height: 130px;
+            font-size: 70px;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        .help {
+            text-align: center;
+            margin-top: 300px;
+        }
+
+        .help p {
+            font-size: 20px;
+        }
+    </style>
 </head>
 
 <body>
     <div class="header">
         <ul class="header__nav">
             <div class="sidebar-btn"><i class="fa-solid fa-bars"></i></div>
-            <li><a href="">Admin</a></li>
-            <li class="back-to-CV"> <a href="../../../CV.html"><i class="fa-solid fa-rotate-left"></i>Về trang web</a>
+            <li><a href="./admin.html">Admin</a></li>
+            <li class="back-to-home"> <a href="#"><i class="fa-solid fa-rotate-left"></i>Back to home</a>
             </li>
-            <li><a href="#">Hướng dẫn</a></li>
-            <li><a href="#">Hỗ trợ</a></li>
+            <li><a href="#">Guide</a></li>
+            <li><a href="#">Help</a></li>
         </ul>
 
         <div class="header__hello">
-            Xin chào: admin <i class="fa-solid fa-caret-down"></i>
+            Hello: admin <i class="fa-solid fa-caret-down"></i>
         </div>
-        <div class="log-out">Đăng xuất</div>
+        <a class="log-out">Log out</a>
     </div>
 
     <div class="body-container">
@@ -37,31 +74,31 @@
                     <div class="sliderbar-container">
                         <ul id="sidebar" class="side__items">
                             <li class="side__item side__item--members"><a href="./member.html"><i
-                                        class="sidebar--icon fa-solid fa-person"></i>Thành viên</a></li>
+                                        class="sidebar--icon fa-solid fa-person"></i>Ctrl Members</a></li>
                             <li class="side__item side__item--posts js-posts--open">
                                 <a href="./posts.html">
                                     <i class="sidebar--icon fa-solid fa-newspaper"></i>
-                                    Bài viết
+                                    Ctrl Posts
                                 </a>
                                 <div class="up-down-icon">
                                     <i class="posts--icon  fa-solid fa-angle-down"></i>
                                 </div>
                                 <ul class="posts__nav">
-                                    <li><a href="#">- Giới thiệu</a></li>
-                                    <li><a href="#">- Dịch vụ</a></li>
-                                    <li><a href="#">- Kĩ năng</a></li>
-                                    <li><a href="#">- Lĩnh vực</a></li>
-                                    <li><a href="#">- Kinh nghiệm</a></li>
-                                    <li><a href="#">- Liên hệ</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Skills</a></li>
+                                    <li><a href="#">Portfolios</a></li>
+                                    <li><a href="#">Experiences</a></li>
+                                    <li><a href="#">Contact</a></li>
                                 </ul>
                             </li>
-                            <li class="side__item side__item--contact"><a href="#"><i
-                                        class="sidebar--icon fa-solid fa-address-card"></i>Liên hệ</a></li>
+                            <li class="side__item side__item--contact"><a href=""><i
+                                        class="sidebar--icon fa-solid fa-address-card"></i>Ctrl Contact</a></li>
                             <li class="side__item mobile-item">
-                                <a href="#">Hướng dẫn</a>
+                                <a href="#">Guide</a>
                             </li>
                             <li class="side__item mobile-item">
-                                <a href="#">Hỗ Trợ</a>
+                                <a href="#">Help</a>
                             </li>
                         </ul>
                     </div>
@@ -73,12 +110,12 @@
                                 <div class="number-member">
                                     3
                                 </div>
-                                <h1>Số thành viên</h1>
+                                <h1>The number of member</h1>
                             </div>
                             <div class="help">
-                                <h1>Nếu có bất kì trục trặc nào về kĩ thuật</h1>
-                                <h1>Vui lòng liên hệ:</h1>
-                                <p>0123456879</p> 
+                                <h1>If you have any technical problem</h1>
+                                <h1>Please call:</h1>
+                                <p>0123456879</p>
                             </div>
                         </div>
                     </div>
@@ -96,24 +133,24 @@
         var sidebar = document.getElementById('sidebar')
         function showSidebar() {
             sidebar.classList.toggle('show')
-            
+
         }
         showSideBar.addEventListener('click', showSidebar)
 
         var logOut = document.querySelector('.log-out')
         var helloAdmin = document.querySelector('.header__hello')
-        helloAdmin.addEventListener('click', function() {
+        helloAdmin.addEventListener('click', function () {
             logOut.classList.toggle('show')
         })
 
 
         var openPostsNavIcon = document.querySelector('.js-posts--open')
         var onOffpostsNav = document.querySelector('.posts__nav')
-        
+
         function showPosts() {
             onOffpostsNav.classList.toggle('posts--open')
         }
-     
+
         openPostsNavIcon.addEventListener('click', showPosts)
     </script>
 
