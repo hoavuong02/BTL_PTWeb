@@ -83,9 +83,12 @@ body{
     line-height: 1.6;
     text-shadow: 0 1px 2px black;
     color: white;
+    display: block;
 }
 
-
+.side__item--posts {
+    position: relative;
+}
  
 .side__item--posts .posts__nav {
     display: none;
@@ -130,9 +133,12 @@ body{
 
 
 .up-down-icon {
-    display: inline-block;
-    padding: 0 15px;
-    margin-left: 90px;
+    position: absolute;
+    padding: 15px;
+    right: 0;
+    top: 0;
+    color: #fff;
+    text-shadow: 0 1px 2px black
 }
 
 .up-down-icon i {
@@ -207,9 +213,3 @@ body{
     }
 }
 
-@media (min-width: 740px) and (max-width: 992px){
-    .up-down-icon{
-        margin-left: 48px;
-        padding: 0;
-    }
-}
