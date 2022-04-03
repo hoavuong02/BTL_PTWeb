@@ -1,0 +1,74 @@
+.contact__modal{
+    background-color: rgba(1,1,1,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: azure;
+    display: none;
+}
+.contact__modal-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact__modal-box{
+    background-color: #F8F7F5;
+    color: #969493;
+    width: 556px;
+    height: 400px;
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-top: 36px;
+    box-shadow: 5px 6px 7px 1px #c1bfbe;
+    border-radius: 4px;
+}
+.contact__modal-row{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.modalContact-name {
+    width: 100px;
+    font-size: 20px;
+}
+
+.modalContact-content {
+    flex: 1;
+    padding: 8px 4px;
+    font-size: 16px;
+}
+
+.btn{
+    padding: 6px 32px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
+
+.modalContact-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 23px;
+}
+
+/* responesive for ctrl-contact */
+
+@media (max-width: 739px) {
+    .m-hide {
+        display: none;
+    }
+    .action-btn {
+        width: 100%;
+    }
+    .contact__modal-box {
+        width: 400px;
+        height: 420px;
+    }
+}

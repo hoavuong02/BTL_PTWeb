@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,10 @@
     <link rel="stylesheet" href="../../library/grid.css">
     <link rel="stylesheet" href="../Templates/sidebar.css">
     <link rel="stylesheet" href="../Templates/table_form.css">
-    <link rel="stylesheet" href="../css/contact.css">
-    <link rel="stylesheet" href="../Templates/show-sub-posts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>Contact</title>
+    <title>Services</title>
 </head>
+
 <body>
     <div class="header">
         <ul class="header__nav">
@@ -32,15 +32,14 @@
 
     <div class="body-container">
         <div class="grid">
-
             <div class="row no-gutters ">
                 <div class="col l-2 m-3">
                     <div class="sliderbar-container">
                         <ul id="sidebar" class="side__items">
-                            <li class="side__item side__item--members"><a href=""><i
-                                        class="sidebar--icon fa-solid fa-person"></i>Ctrl Members</a></li>
+                            <li class="side__item side__item--members"><a
+                                    href=""><i class="sidebar--icon fa-solid fa-person"></i>Ctrl Members</a></li>
                             <li class="side__item side__item--posts js-posts--open">
-                                <a href="#">
+                                <a href="./posts.html">
                                     <i class="sidebar--icon fa-solid fa-newspaper"></i>
                                     Ctrl Posts
                                 </a>
@@ -49,11 +48,11 @@
                                 </div>
                                 <ul class="posts__nav">
                                     <li><a href="./about.html">About</a></li>
-                                    <li><a href="./service.html">Services</a></li>
+                                    <li style="background-color: dodgerblue;"><a href="#">Services</a></li>
                                     <li><a href="./skill.html">Skills</a></li>
                                     <li><a href="./portfolio.html">Portfolios</a></li>
                                     <li><a href="./experience.html">Experiences</a></li>
-                                    <li style="background-color: dodgerblue;"><a href="#">Contact</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
                                 </ul>
                             </li>
                             <li class="side__item side__item--contact"><a href="./ctrl-contact.html"><i
@@ -68,50 +67,28 @@
                     </div>
                 </div>
                 <div class="col l-10 m-9">
-                    <div class="box-container">
+                    <div class="body-content">
                         <div class="function-wrapper">
-                            <div class="row reverse">
-                                <div class="col l-6 m-12 c-12">
-                                    <div class="desc-wrapper">
-
-                                        <button class="action-plus">
-                                            Add description 
-                                        </button>
-                                        <button class="action-fix">
-                                            Edit description 
-                                        </button>
-                                        <button class="action-remove">
-                                            Delete description 
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="col l-6 m-12 c-12">
+                            <div class="row">
+                                <div class="col l-6 m-6 c-12">
                                     <div class="function__search-box">
-                                        <input type="text" class="function__search__input" placeholder="Search"> 
-                                    </div>
-                                </div>
-
-                                <div class="col l-6 m-12 c-12">
-                                    <div class="action-add-box">
-                                        <button class="action-add">
-                                            Add 
-                                        </button>
+                                        <input type="text" class="function__search__input" placeholder="Search">
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="table-container"> 
+                        <div class="table-container">
 
                             <table class="form__table">
                                 <tr class="form__table__key">
                                     <th>ID</th>
-                                    <th>Method</th>
+                                    <th>Name</th>
                                     <th>Tasks</th>
                                 </tr>
                                 <tr class="form__table__rows">
                                     <td>01</td>
-                                    <td>Email</td>
+                                    <td>UI-UX</td>
                                     <td>
                                         <div class="form__table-action">
                                             <div class="action-wrapper">
@@ -123,7 +100,7 @@
                                 </tr>
                                 <tr class="form__table__rows">
                                     <td>02</td>
-                                    <td>Phone</td>
+                                    <td>Graphic design</td>
                                     <td>
                                         <div class="form__table-action">
                                             <div class="action-wrapper">
@@ -135,19 +112,7 @@
                                 </tr>
                                 <tr class="form__table__rows">
                                     <td>03</td>
-                                    <td>Facebook</td>
-                                    <td>
-                                        <div class="form__table-action">
-                                            <div class="action-wrapper">
-                                                <button class="action-btn action-edit">Edit</button>
-                                                <button class="action-btn action-delete">Del</button>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="form__table__rows">
-                                    <td>04</td>
-                                    <td>Zalo</td>
+                                    <td>Web Design</td>
                                     <td>
                                         <div class="form__table-action">
                                             <div class="action-wrapper">
@@ -158,56 +123,38 @@
                                     </td>
                                 </tr>
                             </table>
-                       </div>
+                        </div>
                     </div>
-                </div>
-            </div>
+                    <div class="modal">
+                        <div class="modal-container">
+                            <div class="modal-box">
+                                <div class="modal__row">
+                                    <label for="" class="modal-name">Image</label>
+                                    <input type="file" class="modal__input" placeholder="Choose image">
+                                </div>
+                                <div class="modal__row">
+                                    <label for="" class="modal-name">Name</label>
+                                    <input type="text" class="modal__input" placeholder="Type name">
+                                </div>
+                                <div class="modal-btn">
+                                    <button class="btn modal__save">Save</button>
+                                    <button class="btn modal__Cancle">Cancle</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-        </div>
-    </div>
-
-    <div class="modal">
-        <div class="modal-container">
-            <div class="modal-box">
-
-                <div class="modal__row">
-                    <label for="" class="modal-name">Name</label>
-                    <input type="text" class="modal__input" placeholder="Type name">
-                </div>
-                <div class="modal__row">
-                    <label for="" class="modal-name">Method</label>
-                    <input type="text" class="modal__input" placeholder="Type method">
-                </div>
-                <div class="modal-btn">
-                    <button class="btn modal__save">Save</button>
-                    <button class="btn modal__Cancle">Cancel</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal-Delete">
-        <div class="modal-container">
-            <div class="modal-box2">
-                <h1>Do you want to delete?</h1>
-                <div class="modal-Delete__btn">
-                    <button class="but but-delete">Delete</button>
-                    <button class="but but-cancle">Cancel</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal-desc">
-        <div class="modaldesc-container">
-            <div class="modaldesc-box">
-                <div class="modaldesc__row">
-                    <label for="" class="modaldesc-name">Description</label> 
-                    <input type="text" class="modaldesc__input" placeholder="Type description">
-                </div>
-                <div class="modaldesc-btn">
-                    <button class="btn modaldesc__save">Save</button>
-                    <button class="btn modaldesc__Cancle">Cancel</button>
+                    <div class="modal-Delete">
+                        <div class="modal-container">
+                            <div class="modal-box2">
+                                <h1>Do you want to delete?</h1>
+                                <div class="modal-Delete__btn">
+                                    <button class="but but-delete">Delete</button>
+                                    <button class="but but-cancle">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -215,6 +162,7 @@
 
     <script src="../Templates/sidebar.js"></script>
     <script src="../Templates/table_form.js"></script>
-    <script src="../js/contact.js"></script>
+
 </body>
+
 </html>
