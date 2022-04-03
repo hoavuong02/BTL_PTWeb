@@ -48,11 +48,13 @@ function checkPassword(password){
 password.addEventListener("change",function(){
     if(checkPassword(password.value)){
         passwordError.textContent = " "
-        submitBth.disabled = false;
+        btnLogin.disabled = false;
+        btnLogin.style.opacity = "1"
     }
     else{
         passwordError.textContent = "Password Must be of length 7-12"
         passwordError.style.color = "red"
-        submitBth.disabled = true;
+        btnLogin.disabled = true;
+        btnLogin.style.opacity = "0.8"
     }
 })
