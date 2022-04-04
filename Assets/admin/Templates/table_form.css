@@ -200,6 +200,7 @@ td {
     width: 66%;
 }
 
+
 .action-add {
     width: 143px;
     max-width: 100%;
@@ -255,11 +256,15 @@ td {
 @media (max-width: 739px) {
     .function-wrapper {
         left: 44px;
+    }
+
+    .function-wrapper .row {
+        display: flex;
         flex-direction: column-reverse;
     }
 
     .table-container {
-        height: 100vh;
+        height: 100%;
     }
 
     .modal-box {

@@ -23,19 +23,19 @@ var btnLogin = document.querySelector(".login-btn")
 var password = document.querySelector(".password")
 var passwordError = document.querySelector(".passwordError")
 
+btnLogin.disabled = true;
+
 function checkName(userName) {
-    var NameRegex = /^[a-zA-Z ]{7,12}$/
+    var NameRegex = /^[a-zA-Z0-9 ]{7,12}$/
     return NameRegex.test(userName)
 }
 userName.addEventListener("change", function () {
     if (checkName(userName.value)) {
         userError.textContent = ""
-        btnLogin.disabled = false
         btnLogin.style.opacity = "1"
     } else {
-        userError.textContent = "Username must be alphabetic and length 7-12"
+        userError.textContent = "Must be alphabetic or numeric and length 7-12"
         userError.style.color = "red"
-        btnLogin.disabled = true
         btnLogin.style.opacity = "0.8"
     }
 })
@@ -52,7 +52,7 @@ password.addEventListener("change",function(){
         btnLogin.style.opacity = "1"
     }
     else{
-        passwordError.textContent = "Password Must be of length 7-12"
+        passwordError.textContent = "Must be alphabetic or numeric and length 7-12"
         passwordError.style.color = "red"
         btnLogin.disabled = true;
         btnLogin.style.opacity = "0.8"
