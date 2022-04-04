@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Contact</title>
 </head>
+
 <body>
     <div class="header">
         <ul class="header__nav">
@@ -70,38 +72,46 @@
                 <div class="col l-10 m-9">
                     <div class="box-container">
                         <div class="function-wrapper">
+                            <div class="row">
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="function__search-box">
+                                        <input type="text" class="function__search__input" placeholder="Search">
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row reverse">
                                 <div class="col l-6 m-12 c-12">
                                     <div class="desc-wrapper">
 
                                         <button class="action-plus">
-                                            Add description 
+                                            Add description
                                         </button>
                                         <button class="action-fix">
-                                            Edit description 
+                                            Edit description
                                         </button>
                                         <button class="action-remove">
-                                            Delete description 
+                                            Delete description
                                         </button>
+                                        <div class="action-add-box">
+                                            <button class="action-add">
+                                                Add
+                                            </button>
+                                        </div>
                                     </div>
+                                   
                                 </div>
-                                <div class="col l-6 m-12 c-12">
-                                    <div class="function__search-box">
-                                        <input type="text" class="function__search__input" placeholder="Search"> 
-                                    </div>
-                                </div>
-
-                                <div class="col l-6 m-12 c-12">
+                                <!-- <div class="col l-6 m-12 c-12">
                                     <div class="action-add-box">
                                         <button class="action-add">
-                                            Add 
+                                            Add
                                         </button>
                                     </div>
-                                </div>
+                                </div> -->
+
                             </div>
                         </div>
 
-                        <div class="table-container"> 
+                        <div class="table-container">
 
                             <table class="form__table">
                                 <tr class="form__table__key">
@@ -158,7 +168,7 @@
                                     </td>
                                 </tr>
                             </table>
-                       </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -202,7 +212,7 @@
         <div class="modaldesc-container">
             <div class="modaldesc-box">
                 <div class="modaldesc__row">
-                    <label for="" class="modaldesc-name">Description</label> 
+                    <label for="" class="modaldesc-name">Description</label>
                     <input type="text" class="modaldesc__input" placeholder="Type description">
                 </div>
                 <div class="modaldesc-btn">
@@ -215,6 +225,31 @@
 
     <script src="../Templates/sidebar.js"></script>
     <script src="../Templates/table_form.js"></script>
-    <script src="../js/contact.js"></script>
+    <script>
+        var modalDesc = document.querySelector(".modal-desc")
+        var actionPlus = document.querySelector(".action-plus")
+        var actionFix = document.querySelector(".action-fix")
+        var actionRemove = document.querySelector(".action-remove")
+        var modaldescSave = document.querySelector(".modaldesc__save")
+        var modaldescCancle = document.querySelector(".modaldesc__Cancle")
+
+
+        actionPlus.addEventListener("click", function () {
+            modalDesc.style.display = "block"
+        })
+        actionFix.addEventListener("click", function () {
+            modalDesc.style.display = "block"
+        })
+        actionRemove.addEventListener("click", function () {
+            modalDelete.style.display = "block"
+        })
+        modaldescSave.addEventListener("click", function () {
+            modalDesc.style.display = "none"
+        })
+        modaldescCancle.addEventListener("click", function () {
+            modalDesc.style.display = "none"
+        })
+    </script>
 </body>
+
 </html>

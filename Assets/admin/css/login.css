@@ -19,6 +19,10 @@
 
 }
 
+#login-form input {
+    padding-left: 8px;
+}
+
 #login .login__item-left {
     /* flex: 2; */
     text-align: center;

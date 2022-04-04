@@ -58,14 +58,15 @@
     padding-top: 23px;
 }
 
-/* responesive for ctrl-contact */
+.action-btn {
+    width: 100%;
+}
+
+/* responesive for mobile ctrl-contact */
 
 @media (max-width: 739px) {
     .m-hide {
         display: none;
-    }
-    .action-btn {
-        width: 100%;
     }
     .contact__modal-box {
         width: 400px;
