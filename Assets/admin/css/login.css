@@ -1,14 +1,10 @@
-
-input {
-    font-size: 24px; 
-    margin-bottom: 20px;
-}
-
 .login-btn {
+    margin-top: 10px;
     font-size: 24px;
-    padding: 12px;
+    padding: 4px 12px;
     color: #000;
     font-weight: bolder;
+    border-radius: 8px;
 }
 
 #login {
@@ -17,7 +13,9 @@ input {
     margin: 30px auto;
     height: 600px;
     border: 2px solid #2b3e51;
-    background-image: linear-gradient(to top, rgb(160, 4, 165),rgb(0, 238, 255));
+    /* background-image: linear-gradient(to top, rgb(160, 4, 165),rgb(0, 238, 255)); */
+    background-color: dodgerblue;
+    border-radius: 8px;
 
 }
 
@@ -73,7 +71,6 @@ input {
     /* flex: 1; */
     flex-direction: column;
     text-align: center;
-    padding-left: 16px;
 }
 
 #login .login__item-forgot h2 {
@@ -91,11 +88,37 @@ input {
     color: #000;
 }
 
+input {
+    margin-top: 20px;
+    border-radius: 8px;
+    height: 36px;
+    width: 80%;
+}
+
 .dis-flex {
     display: flex !important;
 }
 
 .dis-none {
     display: none !important;
+}
+
+
+@media (max-width: 739px) {
+    #login {
+        width: 90vw;
+    }
+
+    #login .login__item-left{
+        display: none;
+    }
+    
+    #login .login__item-right {
+        width: 100%;
+    }
+
+    #login .login__item-forgot {
+        width: 100%;
+    }
 }
 

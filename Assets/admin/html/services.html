@@ -10,23 +10,7 @@
     <link rel="stylesheet" href="../Templates/sidebar.css">
     <link rel="stylesheet" href="../Templates/table_form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>posts</title>
-    <style>
-        .table-container h3 {
-            text-align: center;
-            position: relative;
-            top: 100px;
-            font-size: 20px;
-        }
-        .action-wrapper a {
-            text-decoration: none;
-            color: #000;
-            padding: 8px 16px;
-            margin: 8px 0;
-            border: 1px solid #000;
-
-        }
-    </style>
+    <title>Services</title>
 </head>
 
 <body>
@@ -48,15 +32,14 @@
 
     <div class="body-container">
         <div class="grid">
-
             <div class="row no-gutters ">
                 <div class="col l-2 m-3">
                     <div class="sliderbar-container">
                         <ul id="sidebar" class="side__items">
-                            <li class="side__item side__item--members"><a href=""><i
-                                        class="sidebar--icon fa-solid fa-person"></i>Ctrl Members</a></li>
-                            <li class="side__item side__item--posts js-posts--open" style="background-color: dodgerblue;">
-                                <a href="#">
+                            <li class="side__item side__item--members"><a
+                                    href=""><i class="sidebar--icon fa-solid fa-person"></i>Ctrl Members</a></li>
+                            <li class="side__item side__item--posts js-posts--open">
+                                <a href="./posts.html">
                                     <i class="sidebar--icon fa-solid fa-newspaper"></i>
                                     Ctrl Posts
                                 </a>
@@ -64,15 +47,15 @@
                                     <i class="posts--icon  fa-solid fa-angle-down"></i>
                                 </div>
                                 <ul class="posts__nav">
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Skills</a></li>
-                                    <li><a href="#">Portfolios</a></li>
-                                    <li><a href="#">Experiences</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="./about.html">About</a></li>
+                                    <li style="background-color: dodgerblue;"><a href="#">Services</a></li>
+                                    <li><a href="./skill.html">Skills</a></li>
+                                    <li><a href="./portfolio.html">Portfolios</a></li>
+                                    <li><a href="./experience.html">Experiences</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
                                 </ul>
                             </li>
-                            <li class="side__item side__item--contact"><a href="#"><i
+                            <li class="side__item side__item--contact"><a href="./ctrl-contact.html"><i
                                         class="sidebar--icon fa-solid fa-address-card"></i>Ctrl Contact</a></li>
                             <li class="side__item mobile-item">
                                 <a href="#">Guide</a>
@@ -89,14 +72,14 @@
                             <div class="row">
                                 <div class="col l-6 m-6 c-12">
                                     <div class="function__search-box">
-                                        <input type="text" class="function__search__input" placeholder="Search"> 
+                                        <input type="text" class="function__search__input" placeholder="Search">
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="table-container">
-                            <h3>Choose a member you want to edit</h3>
+
                             <table class="form__table">
                                 <tr class="form__table__key">
                                     <th>ID</th>
@@ -105,38 +88,71 @@
                                 </tr>
                                 <tr class="form__table__rows">
                                     <td>01</td>
-                                    <td>Đam Viet Vuong</td>
+                                    <td>UI-UX</td>
                                     <td>
                                         <div class="form__table-action">
                                             <div class="action-wrapper">
-                                                <a href="./about.html">Edit</a>
+                                                <button class="action-btn action-edit">Edit</button>
+                                                <button class="action-btn action-delete">Del</button>
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr class="form__table__rows">
                                     <td>02</td>
-                                    <td>Bui Duc Tung</td>
+                                    <td>Graphic design</td>
                                     <td>
                                         <div class="form__table-action">
                                             <div class="action-wrapper">
-                                                <a href="./about.html">Edit</a>
+                                                <button class="action-btn action-edit">Edit</button>
+                                                <button class="action-btn action-delete">Del</button>
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr class="form__table__rows">
                                     <td>03</td>
-                                    <td>Nguyen Manh Tien</td>
+                                    <td>Web Design</td>
                                     <td>
                                         <div class="form__table-action">
                                             <div class="action-wrapper">
-                                                <a href="./about.html">Edit</a>
+                                                <button class="action-btn action-edit">Edit</button>
+                                                <button class="action-btn action-delete">Del</button>
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
                             </table>
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-container">
+                            <div class="modal-box">
+                                <div class="modal__row">
+                                    <label for="" class="modal-name">Image</label>
+                                    <input type="file" class="modal__input" placeholder="Choose image">
+                                </div>
+                                <div class="modal__row">
+                                    <label for="" class="modal-name">Name</label>
+                                    <input type="text" class="modal__input" placeholder="Type name">
+                                </div>
+                                <div class="modal-btn">
+                                    <button class="btn modal__save">Save</button>
+                                    <button class="btn modal__Cancle">Cancle</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-Delete">
+                        <div class="modal-container">
+                            <div class="modal-box2">
+                                <h1>Do you want to delete?</h1>
+                                <div class="modal-Delete__btn">
+                                    <button class="but but-delete">Delete</button>
+                                    <button class="but but-cancle">Cancel</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -145,6 +161,8 @@
     </div>
 
     <script src="../Templates/sidebar.js"></script>
+    <script src="../Templates/table_form.js"></script>
+
 </body>
 
 </html>

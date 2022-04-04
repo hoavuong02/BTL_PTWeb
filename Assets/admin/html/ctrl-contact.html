@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,11 @@
     <link rel="stylesheet" href="../../library/grid.css">
     <link rel="stylesheet" href="../Templates/sidebar.css">
     <link rel="stylesheet" href="../Templates/table_form.css">
-    <link rel="stylesheet" href="../Templates/show-sub-posts.css">
+    <link rel="stylesheet" href="../css/ctrl-contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>Service</title>
+    <title>Control-Contact</title>
 </head>
+
 <body>
     <div class="header">
         <ul class="header__nav">
@@ -31,13 +33,12 @@
 
     <div class="body-container">
         <div class="grid">
-
             <div class="row no-gutters ">
                 <div class="col l-2 m-3">
                     <div class="sliderbar-container">
                         <ul id="sidebar" class="side__items">
-                            <li class="side__item side__item--members"><a href="./member.html"><i
-                                        class="sidebar--icon fa-solid fa-person"></i>Ctrl Contact</a></li>
+                            <li class="side__item side__item--members"><a href=""><i
+                                        class="sidebar--icon fa-solid fa-person"></i>Ctrl Members</a></li>
                             <li class="side__item side__item--posts js-posts--open">
                                 <a href="./posts.html">
                                     <i class="sidebar--icon fa-solid fa-newspaper"></i>
@@ -48,14 +49,14 @@
                                 </div>
                                 <ul class="posts__nav">
                                     <li><a href="./about.html">About</a></li>
-                                    <li style="background-color: dodgerblue;"><a href="#">Services</a></li>
+                                    <li><a href="#">Services</a></li>
                                     <li><a href="./skill.html">Skills</a></li>
                                     <li><a href="./portfolio.html">Portfolios</a></li>
                                     <li><a href="./experience.html">Experiences</a></li>
                                     <li><a href="./contact.html">Contact</a></li>
                                 </ul>
                             </li>
-                            <li class="side__item side__item--contact"><a href=""><i
+                            <li class="side__item side__item--contact"  style="background-color: dodgerblue;"><a href="./ctrl-contact.html"><i
                                         class="sidebar--icon fa-solid fa-address-card"></i>Ctrl Contact</a></li>
                             <li class="side__item mobile-item">
                                 <a href="#">Guide</a>
@@ -67,32 +68,39 @@
                     </div>
                 </div>
                 <div class="col l-10 m-9">
-                    <div class="box-container">
+                    <div class="body-content">
                         <div class="function-wrapper">
-                            <div class="row" style="text-align: end;">
+                            <div class="row">
                                 <div class="col l-6 m-6 c-12">
-                                    <button class="action-add">
-                                        Add <i class="fa-solid fa-circle-plus"></i>
-                                    </button>
+                                    <div class="function__search-box">
+                                        <input type="text" class="function__search__input" placeholder="Search">
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="table-container"> 
+                        <div class="table-container">
 
                             <table class="form__table">
                                 <tr class="form__table__key">
                                     <th>ID</th>
                                     <th>Name</th>
+                                    <th class="m-hide">Email</th>
+                                    <th class="m-hide">Date</th>
+                                    <th class="m-hide">Status</th>
+                                    <th>See clearly</th>
                                     <th>Tasks</th>
                                 </tr>
                                 <tr class="form__table__rows">
                                     <td>01</td>
-                                    <td>UI-UX</td>
+                                    <td>Đàm Văn C</td>
+                                    <td class="m-hide">damvuong@gmail.com</td>
+                                    <td class="m-hide">15-03-2021</td>
+                                    <td class="m-hide">Already seen</td>
+                                    <td><a href="#" class="action-view-first">See clearly</a></td>
                                     <td>
                                         <div class="form__table-action">
                                             <div class="action-wrapper">
-                                                <button class="action-btn action-edit">Edit</button>
                                                 <button class="action-btn action-delete">Del</button>
                                             </div>
                                         </div>
@@ -100,55 +108,89 @@
                                 </tr>
                                 <tr class="form__table__rows">
                                     <td>02</td>
-                                    <td>Graphic design</td>
+                                    <td>Nguyễn Văn A</td>
+                                    <td class="m-hide">vana@gmail.com</td>
+                                    <td class="m-hide">19-06-2021</td>
+                                    <td class="m-hide change-see">Not seen</td>
+                                    <td><a href="#" class="action-view-second">See clearly</a></td>
                                     <td>
                                         <div class="form__table-action">
                                             <div class="action-wrapper">
-                                                <button class="action-btn action-edit">Edit</button>
-                                                <button class="action-btn action-delete">Del</button>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="form__table__rows">
-                                    <td>03</td>
-                                    <td>Web Design</td>
-                                    <td>
-                                        <div class="form__table-action">
-                                            <div class="action-wrapper">
-                                                <button class="action-btn action-edit">Edit</button>
                                                 <button class="action-btn action-delete">Del</button>
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
                             </table>
-                       </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-
-    <div class="modal">
-        <div class="modal-container">
-            <div class="modal-box">
-                <div class="modal__row">
-                    <label for="" class="modal-name">Image</label> 
-                    <input type="file" class="modal__input" placeholder="Choose image">
+    <div class="contact__modal contact__modal-first">
+        <div class="contact__modal-container">
+            <div class="contact__modal-box">
+                <div class="contact__modal-row">
+                    <label for="" class="modalContact-name">Name</label>
+                    <p class="modalContact-content">Đàm Văn C</p>
                 </div>
-                <div class="modal__row">
-                    <label for="" class="modal-name">Name</label> 
-                    <input type="text" class="modal__input" placeholder="Type name">
+                <div class="contact__modal-row">
+                    <label for="" class="modalContact-name">Gmail</label>
+                    <p class="modalContact-content">vana@gmail.com</p>
                 </div>
-                <div class="modal-btn">
-                    <button class="btn modal__save">Save</button>
-                    <button class="btn modal__Cancle">Cancle</button>
+                <div class="contact__modal-row">
+                    <label for="" class="modalContact-name">Date</label>
+                    <p class="modalContact-content">19-06-2021</p>
+                </div>
+                <div class="contact__modal-row">
+                    <label for="" class="modalContact-name">Content</label>
+                    <p class="modalContact-content">Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit.
+                        Aspernatur, quos! Assumenda eaque non blanditiis. Debitis qui repudiandae
+                        provident distinctio
+                        voluptatibus quidem soluta tempore, voluptates accusamus dicta fugit deserunt
+                        est sunt?</p>
+                </div>
+                <div class="modalContact-btn">
+                    <button class="btn modalContact-close">Close</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="contact__modal contact__modal-second">
+        <div class="contact__modal-container">
+            <div class="contact__modal-box">
+                <div class="contact__modal-row">
+                    <label for="" class="modalContact-name">Name</label>
+                    <p class="modalContact-content">Nguyễn Văn A</p>
+                </div>
+                <div class="contact__modal-row">
+                    <label for="" class="modalContact-name">Gmail</label>
+                    <p class="modalContact-content">damvuong@gmail.com</p>
+                </div>
+                <div class="contact__modal-row">
+                    <label for="" class="modalContact-name">Date</label>
+                    <p class="modalContact-content">15-03-2021</p>
+                </div>
+                <div class="contact__modal-row">
+                    <label for="" class="modalContact-name">Content</label>
+                    <p class="modalContact-content">Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit.
+                        Aspernatur, quos! Assumenda eaque non blanditiis. Debitis qui repudiandae
+                        provident distinctio
+                        voluptatibus quidem soluta tempore, voluptates accusamus dicta fugit deserunt
+                        est sunt?</p>
+                </div>
+                <div class="modalContact-btn">
+                    <button class="btn modalContact-close">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <div class="modal-Delete">
         <div class="modal-container">
@@ -162,6 +204,8 @@
         </div>
     </div>
     <script src="../Templates/sidebar.js"></script>
-    <script src="../Templates/table_form.js"></script>
+    <script src="../js/ctrl-contact.js"></script>
+
 </body>
+
 </html>
