@@ -167,6 +167,32 @@ body{
     padding: 4px;
 }
 
+#footer {
+    background-color: grey;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer__text {
+    font-size: 24px;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.footer__list a {
+    color: #000;
+    padding: 0 5px;
+    font-size: 20px;
+}
+
+.footer__list a:hover {
+    opacity: 0.8;
+}
+
 
 @media (max-width:740px)
 {
@@ -218,5 +244,11 @@ body{
 
     .header__nav li:hover {
         background-color: unset;
+    }
+
+    #footer {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
     }
 }

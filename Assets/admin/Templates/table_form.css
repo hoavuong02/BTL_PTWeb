@@ -256,6 +256,11 @@ td {
 
 /* Mobile */
 @media (max-width: 739px) {
+    html, body {
+        height: 100%;
+        position: relative;
+    }
+
     .function-wrapper {
         left: 44px;
     }
@@ -280,6 +285,10 @@ td {
 
     .modal__row {
         padding: 8px;
+    }
+
+    .action-add {
+        margin-top: 10px;
     }
 }
 
