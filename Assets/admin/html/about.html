@@ -13,9 +13,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>About</title>
     <style>
-        .action-edit, 
+        .action-edit,
         .action-delete {
             width: 100%;
+        }
+
+        @media (max-width:740px) {
+            #footer {
+                position: relative;
+                width: 100%;
+                margin-top: 25px;
+                bottom: 0;
+            }
         }
     </style>
 </head>
@@ -25,7 +34,8 @@
         <ul class="header__nav">
             <div class="sidebar-btn"><i class="fa-solid fa-bars"></i></div>
             <li><a href="./admin.html">Admin</a></li>
-            <li class="back-to-home"> <a href="../../../index.html"><i class="fa-solid fa-rotate-left"></i>Back to home</a>
+            <li class="back-to-home"> <a href="../../../index.html"><i class="fa-solid fa-rotate-left"></i>Back to
+                    home</a>
             </li>
             <li><a href="#">Guide</a></li>
             <li><a href="#">Help</a></li>
@@ -247,6 +257,15 @@
         </div>
     </div>
 
+    <div id="footer">
+        <p class="footer__text">Copyright belong to team 10</p>
+        <ul class="footer__list">
+            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+        </ul>
+    </div>
 
     <script src="../Templates/sidebar.js"></script>
     <script src="../Templates/table_form.js"></script>
