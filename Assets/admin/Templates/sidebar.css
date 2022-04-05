@@ -167,10 +167,10 @@ body{
     padding: 4px;
 }
 
+
 @media (max-width:740px)
 {
-
-
+    
     .header {
         font-size: 16px;
     }
@@ -220,4 +220,3 @@ body{
         background-color: unset;
     }
 }
-

@@ -250,7 +250,9 @@ td {
     border-radius: 20px;
 }
 
-
+.table-container{
+    padding-bottom: 30px;
+}
 
 /* Mobile */
 @media (max-width: 739px) {
