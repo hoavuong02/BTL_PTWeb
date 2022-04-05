@@ -196,8 +196,7 @@ body{
 
 @media (max-width:740px)
 {
-
-
+    
     .header {
         font-size: 16px;
     }
@@ -253,4 +252,3 @@ body{
         bottom: 0;
     }
 }
-
