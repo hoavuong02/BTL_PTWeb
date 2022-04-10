@@ -7,7 +7,10 @@
     <title>Trang chủ</title>
     <link rel="stylesheet" href="./Assets/library/reset.css">
     <link rel="stylesheet" href="./Assets/guest/css/style.css">
+    <link rel="stylesheet" href="./Assets/library/grid.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <div class="main">
@@ -29,7 +32,7 @@
             <div class="intro-header">
                 <div class="intro_header">
                     <div class="row">
-                        <div class="col-full">
+                        <div class="l-12 c-12">
                             <h1 class="intro-text">Welcome to Team 10</h1>
                             <ul class="social-media-buttons text-center"> 
                                 <li>
@@ -50,35 +53,41 @@
                     <h3 class="member-header">My Team:</h3>
                 </div>
                 <div class="row member-list">
-                    <div class="col-third s-col-full">
-                        <a class="member-link" href="./CV.html">
-                            <div class="member-piece">
-                                <h4 class="text-center"><i class="fa-solid fa-thumbtack"></i></h4>
-                                <h4 class="text-center">Name: Dam Viet Vuong</h4>
-                                <h5 class="text-center">Student ID: 2051063699</h5>
-                                <img src="./Assets/image/index_img/ava1.jpg"  alt="Placeholder"/>
-                            </div>
-                        </a>    
+                    <div class="col l-4 c-12 ">
+                        <div class="contact__input " data-aos="flip-left" data-aos-duration="600" data-aos-delay="300" data-aos-easing=ease-in-out>
+                            <a class="member-link" href="./Assets/guest/html/CV_Vuong.html">
+                                <div class="member-piece">
+                                    <h4 class="text-center"><i class="fa-solid fa-thumbtack"></i></h4>
+                                    <h4 class="text-center">Name: Dam Viet Vuong</h4>
+                                    <h5 class="text-center">Student ID: 2051063699</h5>
+                                    <img src="./Assets/image/index_img/ava1.jpg"  alt="Placeholder"/>
+                                </div>
+                            </a>    
+                        </div>    
                     </div>
-                    <div class="col-third s-col-full">
-                        <a class="member-link" href="./CV.html">
-                            <div class="member-piece">
-                                <h4 class="text-center"><i class="fa-solid fa-thumbtack"></i></h4>
-                                <h4 class="text-center">Name: Nguyen Manh Tien</h4>
-                                <h5 class="text-center">Student ID: 2051063801</h5>
-                                <img src="./Assets/image/index_img/ava2.jpg"  alt="Placeholder">
-                            </div>
-                        </a>    
+                    <div class="col l-4 c-12 ">
+                        <div class="contact__input " data-aos="flip-left" data-aos-duration="600" data-aos-delay="300" data-aos-easing=ease-in-out>
+                            <a class="member-link" href="./Assets/guest/html/CV_Tien.html">
+                                <div class="member-piece">
+                                    <h4 class="text-center"><i class="fa-solid fa-thumbtack"></i></h4>
+                                    <h4 class="text-center">Name: Nguyen Manh Tien</h4>
+                                    <h5 class="text-center">Student ID: 2051063801</h5>
+                                    <img src="./Assets/image/index_img/ava2.jpg"  alt="Placeholder">
+                                </div>
+                            </a>    
+                        </div>    
                     </div>
-                    <div class="col-third s-col-full">
-                        <a class="member-link" href="./CV.html">
-                            <div class="member-piece">
-                                <h4 class="text-center"><i class="fa-solid fa-thumbtack"></i></h4>
-                                <h4 class="text-center">Name: Bui Duc Tung</h4>
-                                <h5 class="text-center">Student ID: 2051063527</h5>
-                                <img src="./Assets/image/index_img/ava3.jpg"  alt="Placeholder">
-                            </div>
-                        </a>    
+                    <div class="col l-4 c-12 ">
+                        <div class="contact__input " data-aos="flip-left" data-aos-duration="600" data-aos-delay="300" data-aos-easing=ease-in-out>
+                            <a class="member-link" href="./Assets/guest/html/CV_Tung.html">
+                                <div class="member-piece">
+                                    <h4 class="text-center"><i class="fa-solid fa-thumbtack"></i></h4>
+                                    <h4 class="text-center">Name: Bui Duc Tung</h4>
+                                    <h5 class="text-center">Student ID: 2051063527</h5>
+                                    <img src="./Assets/image/index_img/ava3.jpg"  alt="Placeholder">
+                                </div>
+                            </a>  
+                    </div>      
                     </div>
                 </div>
             </div>
@@ -89,14 +98,14 @@
         <section id="about">
             <div class="container-fluid">
             <div class="row">
-                <div class="col-half s-col-full">
+                <div class="l-6 c-12">
                 <div class="about-description">
                     <h3>About team:</h3>
                     <p>We are students in Thuy Loi University</p>
                     <p>We are attending CES391 course</p>
                 </div>
                 </div>
-                <div class="about-img col-half s-col-full">
+                <div class="about-img l-6 c-12">
                     <img src="./Assets/image/index_img/img2.jpg"  alt="sofa-and-computer"/>
                 </div>
             </div>
@@ -115,6 +124,10 @@
             </div>
         </section>
     </div>
+    <script>
+        AOS.init({
 
+        }); // Thư viện animation
+    </script>
 </body>
 </html>
