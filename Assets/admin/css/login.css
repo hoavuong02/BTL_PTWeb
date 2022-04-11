@@ -127,3 +127,10 @@ input {
     }
 }
 
+@media (min-width: 740px) and (max-width: 991px) {
+    .login__container {
+        width: 100% !important ;
+        margin-left: -3.5px !important;
+    }
+}
+
